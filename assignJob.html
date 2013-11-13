@@ -1,5 +1,5 @@
-	<nav id = "navBar">
-		<h2 id="noIcons">Assign Job</h2>
+	<nav id = "navBar" class="center">
+		<h2>Assign Job</h2>
 	</nav>
 	<div class="clear"></div>
 	<div id="assignJob">	
@@ -8,11 +8,15 @@
 			<a href="selectJobs.html"><li>Select job <span class="blue">*</span><img src="images/smallArrow.png"></li></a>
 			<a href="selectValue.html"><li>Select benefit <span class="blue">*</span><img src="images/smallArrow.png"></li></a>
 			<a href="selectFrequency.html"><li>Select frequency <span class="blue">*</span><img src="images/smallArrow.png"></li></a>
-			<li>Notes <br /><textarea rows="" cols=""></textarea></li>
+			<li><textarea rows="" cols="" name="assignJob_note" placeholder="Your notes"></textarea></li>
 			<li>Details<br />
-				<input type="checkbox" name="urgent" id="urgent" value="yes"><label for="urgent">Urgent</label><br />
-				<input type="checkbox" name="extra" id="extra" value="yes"><label for="extra">Extra</label><br />
-				<input type="checkbox" name="trading" id="trading" value="yes"><label for="trading">Open for Trading</label></li>
+				<div class="right">
+				<input type="checkbox" name="details_urgent" id="urgent" value="urgent"><label for="urgent">Urgent</label><br />
+				<input type="checkbox" name="details_extra" id="extra" value="extra"><label for="extra">Extra</label><br />
+				<input type="checkbox" name="details_trading" id="trading" value="open"><label for="trading">Open for Trading</label>
+				</div>
+				<div class="clear"></div>
+				</li>
 			<li>Select job icon
 				<div class="clear"></div>
 				<div class="icon"></div>
@@ -20,6 +24,6 @@
 				<div class="clear"></div>
 				</li>
 		</ul>
-		<button type="button">Cancel</button>
-		<input type="submit" name="submit" id="submit" value="Assign Job">
+		<a href="week.html"><button type="button">Cancel</button></a>
+		<input type="submit" name="assign_job" id="submit" value="Assign Job">
 	</div>

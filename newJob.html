@@ -1,0 +1,27 @@
+	<nav id = "navBar" class="center">
+		<h2>New Job</h2>
+	</nav>
+	<div class="clear"></div>
+	<div id="newJob">	
+		<ul>
+			<li><input type="text" name="job_title" placeholder="Job Title" class="long"> <span class="blue">*</span></li>
+			<a href="selectValue.html"><li>Benefit <img src="images/smallArrow.png"></li></a>
+			<a href="selectFrequency.html"><li>Frequency <img src="images/smallArrow.png"></li></a>
+			<li><textarea rows="" cols="" name="newJob_note" placeholder="Your notes"></textarea></li>
+			<li>Details<br />
+				<div class="right">
+				<input type="checkbox" name="details_urgent" id="urgent" value="urgent"><label for="urgent">Urgent</label><br />
+				<input type="checkbox" name="details_extra" id="extra" value="extra"><label for="extra">Extra</label><br />
+				<input type="checkbox" name="details_trading" id="trading" value="open"><label for="trading">Open for Trading</label>
+				</div>
+				<div class="clear"></div></li>
+			<li>Select job icon
+				<div class="clear"></div>
+				<div class="icon"></div>
+				<img src="images/smallArrow.png">
+				<div class="clear"></div>
+				</li>
+		</ul>
+		<a href="week.html"><button type="button">Cancel</button></a>
+		<a href="assignJob.html"><input type="submit" name="create_job" id="submit" value="Create Job"></a>
+	</div>
