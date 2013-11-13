@@ -42,7 +42,7 @@ h1 {
     color: rgb(255,255,255);
     font-size: 2.7em;
     font-weight: 400;
-    margin: 70px 0px 40px 0px;
+    margin: 50px 0px 50px 0px;
 }
 
 h2 {
@@ -56,7 +56,7 @@ h2 {
 h4 {
     width: 60%;
     border-bottom: 1px solid rgb(147,149,152);
-    color: rgb(88,89,91);
+    color: rgb(65,64,66);
     font-size: 1.1em;
     font-weight: 200;
     padding: 0px 0px 3px 12px;
@@ -337,16 +337,17 @@ div.member td {
 div.new {
     width: 98%;
     margin: 20px 0px 10px 4px;
-    background-color: rgb(188,192,190);
+    background-color: rgb(147,149,152);
     color: rgb(255,255,255);
 }
 
 div.new p {
     padding: 10px 12px;
+    font-size: 1.2em;
 }
 
 div.new img {
-    width: 20px;
+    width: 24px;
 }
 
 div#memberJobs nav#toggleBar, div#memberSettings nav#toggleBar {
@@ -364,11 +365,19 @@ div.swatches {
     -webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
-	margin: 10px 20px 0px 0px;
+	margin: 10px 10px 0px 0px;
 	float: left;
-	background-color: rgb(0,169,163);
+	text-align: center;
 }
 
+div.swatches img {
+    text-align: center;
+    padding: 2px 12px 0px 0px;
+}
+
+div.swatches#selected {
+    background: no-repeat center url('../images/selectBlue.png');
+}
 
 
 /* Rewards
@@ -430,24 +439,31 @@ div#rewardsSpend div.newWishlistBag {
 /* Assign Job
 -------------------------------------------------------------- */
 
-div#assignJob ul, div#memberSettings ul, div#newBenefit ul, div#newValue ul, div#newJob ul, div#newBenefit ul {
+div#assignJob ul, div#memberSettings ul, div#newBenefit ul, div#newValue ul, div#newJob ul, div#newBenefit ul, div#newGroup ul, div#newMember ul, div#groupSortingChoices ul {
     list-style-type: none;
 }
 
-div#assignJob li, div#memberSettings li, div#newBenefit li, div#newValue li, div#newJob li, div#newBenefit li {
+div#assignJob li, div#memberSettings li, div#newBenefit li, div#newValue li, div#newJob li, div#newBenefit li, div#newGroup li, div#newMember li, div#groupSortingChoices li {
     padding: 12px 12px 15px 12px;
     border-bottom: 1px solid rgba(255,255,255,.7);
-    color: rgb(88,89,91);
+    color: rgb(65,64,66);
+    font-weight: 300;
 }
 
-div#assignJob li img, div#memberSettings li img, div#newBenefit li img, div#newValue li img, div#newJob li img, div#newBenefit li img {
+div#assignJob li img, div#memberSettings li img, div#newBenefit li img, div#newValue li img, div#newJob li img, div#newBenefit li img, div#newGroup li img, div#newMember li img {
     float: right;
 }
 
-/* Rewards
+div#assignJob span.output, div#memberSettings span.output, div#newBenefit span.output, div#newValue span.output, div#newJob span.output, div#newBenefit span.output, div#newGroup span.output, div#newMember span.output {
+    color: rgb(128,130,133);
+    font-weight: 100;
+    padding-left: 10px;
+}
+
+/* Add Menu, Settings Menu
 -------------------------------------------------------------- */
 
-div#addMenu {
+div#addMenu, div#settingsMenu {
     background: rgba(209,211,212,.6);
     z-index: 10;
     width: 100%;
@@ -460,7 +476,14 @@ div#addMenu ul {
     width: 100%;
 }
 
-div#addMenu li {
+div#settingsMenu ul {
+    position: fixed;
+    top: 29px;
+    background: rgb(90,197,195);
+    width: 100%;
+}
+
+div#addMenu li, div#settingsMenu li {
     padding: 12px 12px 15px 12px;
     border-bottom: 1px solid rgba(255,255,255,.7);
     color: rgb(255,255,255);
@@ -526,19 +549,37 @@ div#selectValue nav#toggleBar {
 }
 
 
-/* Select Frequency
+/* Select Frequency, Group Benefit Choices, Group Sorting Choices
 -------------------------------------------------------------- */
 
-div#selectFrequency input {
+div#selectFrequency input, div#groupBenefitChoices article input {
     margin-left: 12px;
+}
+
+div#groupSortingChoices input[type="text"] {
+    margin-top: 0;
+}
+
+div#groupSortingChoices div.right {
+    margin-right: 35px;
 }
 
 div#selectFrequency article {
     width: 45%;
 }
 
+div#groupBenefitChoices article {
+    width: 100%;
+}
+
+div#groupBenefitChoices h4 {
+    width: 60%;
+    margin-bottom: 10px;
+}
+
 div#selectFrequency h4 {
     width: 100%;
+    margin-bottom: 10px;
 }
 
 
@@ -614,12 +655,13 @@ div#login input.login {
 -------------------------------------------------------------- */
 
 input[type="date"], input[type="time"], input[type="text"], input[type="search"], textarea {
-    border: 1px solid rgb(200,199,199);
+    border: .5px solid rgb(200,199,199);
     padding: 5px;
     margin-top: 10px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: .9em;
+    font-size: 1em;
     color: rgb(128,130,133);
+    background-color: rgb(245,246,246);
 }
 
 input.long {
@@ -627,7 +669,7 @@ input.long {
 }
 
 input[type="email"], input[type="password"] {
-    border: 2px solid rgb(255,255,255);
+    border: .5px solid rgb(255,255,255);
     padding: 8px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.2em;
@@ -639,6 +681,7 @@ input[type="email"], input[type="password"] {
 
 input:focus, textarea:focus {
     outline: none;
+    border: none;
 }
 
 textarea {
@@ -668,7 +711,7 @@ input[type="submit"]   {
 	background: rgb(255,255,255);	
 	display: inline-block;	
 	color: rgb(0,169,163);			
-	padding: 5px;
+	padding: 3px;
 	border: 1px solid rgb(0,169,163);	
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -679,11 +722,11 @@ input[type="submit"]   {
 	font-weight: 200;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	width: 60%;
-	margin: 12px 2px;
+	margin: 30px 2px;
 }
 
 input.save   {
-    margin-left: 8px;
+    margin-left: 6px;
 	width: 95%;
 	cursor: pointer;
 }
@@ -699,11 +742,11 @@ button  {
 	border-radius: 4px;	
 	line-height: normal;
 	-webkit-appearance: none;	
-	font-size: .8em;
+	font-size: .9em;
 	font-weight: 200;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	width: 30%;
-	margin: 10px 2px 0px 12px;
+	margin: 28px 2px 0px 12px;
 }
 
 
@@ -736,6 +779,11 @@ button  {
     width: 100%;
 }
 
+.italic {
+    font-style: italic;
+    color: rgb(188,190,192);
+}
+
 
 
 /* Divs
@@ -757,9 +805,13 @@ button  {
 /* HTML5 Elements
 -------------------------------------------------------------- */
 
-details, .privilege {
+details, .privilege, .mini {
     font-style: italic;
     font-size: .7em;
     font-weight: 200;
+}
+
+.mini {
+    padding-top: 10px;
 }
 

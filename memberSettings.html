@@ -1,7 +1,7 @@
 <nav id = "navBar" class="center">
 	<a href="family.html" id="left"><img src="images/back.png"></a>
 	<h2>My Job Chart</h2>
-	<a href="" id="right"><img src="images/settings.png"></a>
+	<a href="settingsMenu.html" id="right"><img src="images/settings.png"></a>
 </nav>
 <div id="memberSettings">
 <nav id = "toggleBar">
@@ -76,20 +76,26 @@
 			</li>
 			<li>Summaries
 				<div class="right">
-				<input type="checkbox" name="summaries" value="daily"><label for="daily">Daily</label><br />
-				<input type="checkbox" name="summaries" value="weekly"><label for="weekly">Weekly</label><br />
+				<input type="checkbox" name="summaries" value="daily"><label for="daily">Daily</label><input type="checkbox" name="summaries" value="weekly"><label for="weekly">Weekly</label><br />
 				<input type="time" name="summary_time" placeholder="Summary Time">
 				</div>
-				<div class="clear">
+				<div class="clear"></div>
 			</li>
 			<li>Color<br />
-				<div class="swatches"></div>
-				<div class="swatches"></div>
-				<div class="swatches"></div>
-				<div class="swatches"></div>
-				<div class="swatches"></div>
+				<div class="swatches" style="background: rgb(10,93,90);"></div>
+				<div class="swatches" style="background: rgb(0,169,163)" ><img src="images/selectBlue.png" ></div>
+				<div class="swatches" style="background: rgb(17,24,66);"></div>
+				<div class="swatches" style="background: rgb(32,64,154);"></div>
+				<div class="swatches" style="background: rgb(21,54,27);"></div>
+				<div class="swatches" style="background: rgb(12,169,75);"></div>
+				<div class="swatches" style="background: rgb(67,27,57);"></div>
+				<div class="swatches" style="background: rgb(103,60,151);"></div>
+				<div class="swatches" style="background: rgb(117,29,92);"></div>
+				<div class="swatches" style="background: rgb(182,29,139);"></div>
+				<div class="swatches" style="background: rgb(143,25,28);"></div>
+				<div class="swatches" style="background: rgb(181,59,37);"></div>
 				<div class="clear"></div>
 			</li>
 		</ul>
-<input type="submit" name="save_settings" id="submit" class="save" value="Save Settings">
+<input type="submit" name="save_settings" class="save" value="Save Settings">
 </div>
