@@ -543,25 +543,38 @@ div#rewardsSpend div.newWishlistBag {
 /* Assign Job
 -------------------------------------------------------------- */
 
-div#assignJob ul, div#memberSettings ul, div#newBenefit ul, div#newValue ul, div#newJob ul, div#newBenefit ul, div#newGroup ul, div#newMember ul, div#groupSortingChoices ul {
+div#assignJob ul, div#assignJobComplete ul, div#memberSettings ul, div#newBenefit ul, div#newValue ul, div#newJob ul, div#newBenefit ul, div#newGroup ul, div#newMember ul, div#groupSortingChoices ul {
     list-style-type: none;
+    width: 100%;
 }
 
-div#assignJob li, div#memberSettings li, div#newBenefit li, div#newValue li, div#newJob li, div#newBenefit li, div#newGroup li, div#newMember li, div#groupSortingChoices li {
+div#assignJob li, div#assignJobComplete li, div#memberSettings li, div#newBenefit li, div#newValue li, div#newJob li, div#newBenefit li, div#newGroup li, div#newMember li, div#groupSortingChoices li {
     padding: 12px 12px 15px 12px;
     border-bottom: 1px solid rgba(255,255,255,.7);
     color: rgb(65,64,66);
     font-weight: 300;
+    clear: both;
 }
 
-div#assignJob li img, div#memberSettings li img, div#newBenefit li img, div#newValue li img, div#newJob li img, div#newBenefit li img, div#newGroup li img, div#newMember li img {
+div#assignJob li img, div#assignJobComplete li img, div#memberSettings li img, div#newBenefit li img, div#newValue li img, div#newJob li img, div#newBenefit li img, div#newGroup li img, div#newMember li img {
     float: right;
 }
 
-div#assignJob span.output, div#memberSettings span.output, div#newBenefit span.output, div#newValue span.output, div#newJob span.output, div#newBenefit span.output, div#newGroup span.output, div#newMember span.output {
+div#assignJobComplete img.assignedTo {
+    width: 20px;
+    border: 1px solid rgb(0,169,163);
+    float: right;
+}
+
+div#assignJob p.output, div#assignJobComplete p.output, div#memberSettings p.output, div#newBenefit p.output, div#newValue p.output, div#newJob p.output, div#newBenefit p.output, div#newGroup p.output, div#newMember p.output {
     color: rgb(128,130,133);
     font-weight: 100;
-    padding-left: 10px;
+    float: left;
+}
+
+div#assignJob p.itemLabel, div#assignJobComplete p.itemLabel, div#newGroup p.itemLabel {
+    width: 60%;
+    float: left;
 }
 
 /* Add Menu, Settings Menu, Photo Menu, Photo Default, Verification
@@ -1004,7 +1017,7 @@ button  {
 /* Divs
 -------------------------------------------------------------- */
 
-.icon {
+div#memberSettings .icon, div#assignJobComplete .icon, div#assignJob .icon {
     border: 2px dashed rgb(128,130,133);
     width: 80px;
     height: 60px;
@@ -1013,9 +1026,18 @@ button  {
 	border-radius: 4px;
 	margin: 10px 20px 0px 0px;
 	float: left;
-	/*background: no-repeat center url('../images/addSmall.png');*/
-	background: no-repeat center url('../images/profileMom.png');
+}
 	
+div#memberSettings .icon {
+	background: no-repeat center url('../images/profileMom.png');
+}
+
+div#assignJobComplete .icon {
+	background: no-repeat center url('../images/viola.png');	
+}
+
+div#assignJob .icon {
+	background: no-repeat center url('../images/addSmall.png');	
 }
 
 
