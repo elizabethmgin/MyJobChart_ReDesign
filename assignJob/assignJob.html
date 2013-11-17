@@ -1,20 +1,22 @@
 	<nav id = "navBar" class="center">
-		<h2>New Job</h2>
+		<h2>Assign Job</h2>
 	</nav>
 	<div class="clear"></div>
-	<div id="newJob">	
+	<div id="assignJob">	
 		<ul>
-			<li><input type="text" name="job_name" placeholder="job name" class="long"> <span class="blue">*</span></li>
-			<a href="selectValue.html"><li>Benefit <img src="images/smallArrow.png"></li></a>
-			<a href="selectFrequency.html"><li>Frequency <img src="images/smallArrow.png"></li></a>
-			<li><textarea rows="" cols="" name="newJob_note" placeholder="Your notes"></textarea></li>
+			<a href="selectMembers.html"><li>Select member(s) <span class="blue">*</span><img src="images/smallArrow.png"></li></a>
+			<a href="selectJobs.html"><li>Select job <span class="blue">*</span><img src="images/smallArrow.png"></li></a>
+			<a href="selectValue.html"><li>Select benefit <span class="blue">*</span><img src="images/smallArrow.png"></li></a>
+			<a href="selectFrequency.html"><li>Select frequency <span class="blue">*</span><img src="images/smallArrow.png"></li></a>
+			<li><textarea rows="" cols="" name="assignJob_note" placeholder="Your notes"></textarea></li>
 			<li>Details<br />
 				<div class="right">
 				<input type="checkbox" name="details_urgent" id="urgent" value="urgent"><label for="urgent">Urgent</label><br />
 				<input type="checkbox" name="details_extra" id="extra" value="extra"><label for="extra">Extra</label><br />
 				<input type="checkbox" name="details_trading" id="trading" value="open"><label for="trading">Open for Trading</label>
 				</div>
-				<div class="clear"></div></li>
+				<div class="clear"></div>
+				</li>
 			<a href="photoMenu.html">
 				<li>Select job icon
 					<div class="clear"></div>
@@ -24,6 +26,8 @@
 				</li>
 			</a>
 		</ul>
+
 		<a href="week.html"><button type="button">Cancel</button></a>
-		<a href="assignJob.html"><input type="submit" name="create_job" value="Create Job"></a>
+		<a href="verification.html"><input type="submit" name="assign_job" value="Assign Job"></a>
+
 	</div>

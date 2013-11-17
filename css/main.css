@@ -42,7 +42,9 @@ h1 {
     color: rgb(255,255,255);
     font-size: 2.7em;
     font-weight: 400;
-    margin: 50px 0px 50px 0px;
+    margin: 30px 0px 50px 0px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(255,255,255);
 }
 
 h2 {
@@ -67,13 +69,14 @@ h5 {
     float: left;
     padding: 5px 0px 0px 10px;
     font-weight: 500;
+    font-weight: bold;
     font-size: 1.2em;
 }
 
 h6 {
     padding: 30px 0px 0px 12px;
     font-weight: 700;
-    font-size: 2em;
+    font-size: 1.8em;
     float: left;
 }
 
@@ -81,6 +84,12 @@ h8 {
     color: rgb(88,89,91);
     font-size: 1em;
     font-weight: 400;
+}
+
+h9 {
+    font-weight: 500;
+    font-weight: bold;
+    font-size: 1.3em;
 }
 
 
@@ -156,10 +165,6 @@ nav#toggleBar a#right {
     border-bottom-right-radius: 5px;
     -moz-border-radius-topright: 5px;
     -moz-border-radius-bottomright: 5px;
-    
-}
-
-nav#toggleBar a#middle {
     
 }
 
@@ -253,13 +258,13 @@ div#week {
     margin: 15px 0px 15px 4px;
 }
 
-div#week .dayNight {
+div#week .dayNight, div#reminder .dayNight {
     float: left;
     width: 25px;
     margin: 5px 0px 0px 5px;
 }
 
-div#week h5 {
+div#week h5, div#reminder h5 {
     padding-left: 8px;
 }
 
@@ -267,6 +272,14 @@ div#week .quarter {
     width: 24%;
     height: 80px;
     float: left;
+}
+
+div#reminder .quarter {
+    width: 24%;
+    height: 80px;
+    display: block;
+    background-color: rgb(0,169,163);
+    margin: 30px 0px 0px 30px;
 }
 
 div#week .third {
@@ -281,12 +294,12 @@ div#week .threeQuarter {
     float: right;
 }
 
-div#week .quarter, .third, .threeQuarter {
+div#week .quarter, div#week .third, div#week .threeQuarter {
     background-color: rgb(0,169,163);
     margin: 4px 4px 0px 0px;
 }
 
-div#week details {
+div#week details, div#reminder details {
     margin: 5px 0px 0px 10px;
     color: rgb(255,255,255);
     font-style: normal;
@@ -294,12 +307,86 @@ div#week details {
 }
 
 
-/* Today
+/* Notification
 -------------------------------------------------------------- */
 
+div.notification {
+    width: 100%;
+    background-color: rgb(255,255,255);
+    color: rgb(0,169,163);
+    height: 94px;
+    border-bottom: 1px solid rgb(0,169,163);
+}
+
+div.notification img.left {
+    float: left;
+}
+
+div.notification img.right {
+    float: right;
+    padding: 10px 10px 0px 0px;
+}
+
+div.notificationTitle {
+    text-align: center;
+    width: 100%;
+    background-color: rgb(0,169,163);
+    color: rgb(255,255,255);
+    padding: 10px 0px 10px 0px;
+    margin-top: 20px;
+}
+
+div.notification p {
+    margin: 10px 0px 10px 10px;
+    width: 50%;
+    float: left;
+}
+
+div.notification details {
+    float: left;
+    margin-left: 10px;
+}
+
+.noMargin {
+    margin: 0px !important;
+}
+
+div.notificationSlide {
+    background-color: rgb(90,197,195);
+    width: 100%;
+    color: rgb(255,255,255);
+    height: 94px;
+    border-bottom: 1px solid rgb(0,169,163);
+}
+
+div.notificationSlide > aside {
+    float: left;
+    margin: 10px;
+}
+
+div#notifications .quarter {
+    width: 94px;
+    height: 94px;
+    background-color: rgb(0,169,163);
+    float: left;
+}
+
+div#notifications .dayNight {
+    float: left;
+    width: 35px;
+    margin: 5px 0px 0px 5px;
+}
+
+div#notifications details {
+    margin: 5px 0px 0px 10px;
+    color: rgb(255,255,255);
+    font-style: normal;
+    float: left;
+    font-size: .8em;
+}
 
 
-/* Member
+/* Member, Family, Member Pending
 -------------------------------------------------------------- */
 
 div#groups, div#family {
@@ -314,13 +401,25 @@ div.member {
     margin: 10px 0px 10px 4px;
 }
 
-div.member img.left {
+div.memberPending {
+    width: 98%;
+    background-color: rgb(188,190,192);
+    color: rgb(255,255,255);
+    height: 94px;
+    margin: 10px 0px 10px 4px;
+}
+
+div.memberPending img.left, div.member img.left {
     float: left;
+}
+
+div.memberPending button {
+    width: 50%;
 }
 
 div.member img.right {
     float: right;
-    margin: 27px 10px 0px 0px;
+    padding: 30px 10px 0px 0px;
 }
 
 div.member table {
@@ -350,10 +449,6 @@ div.new img {
     width: 24px;
 }
 
-div#memberJobs nav#toggleBar, div#memberSettings nav#toggleBar {
-    margin-left: 80px;
-}
-
 div#memberSettings th {
     font-style: italic;
     font-weight: 100;
@@ -375,8 +470,17 @@ div.swatches img {
     padding: 2px 12px 0px 0px;
 }
 
-div.swatches#selected {
-    background: no-repeat center url('../images/selectBlue.png');
+div#groups details {
+    font-style: normal;
+    font-size: .8em;
+    float: left;
+    margin: 0px 0px 0px 12px;
+    clear: both;
+}
+
+div#groups details a {
+    color: rgb(255,255,255);
+    float: left;
 }
 
 
@@ -460,10 +564,10 @@ div#assignJob span.output, div#memberSettings span.output, div#newBenefit span.o
     padding-left: 10px;
 }
 
-/* Add Menu, Settings Menu
+/* Add Menu, Settings Menu, Photo Menu, Photo Default, Verification
 -------------------------------------------------------------- */
 
-div#addMenu, div#settingsMenu {
+div#addMenu, div#settingsMenu, div#photoMenu, div#photoDefault, div#verification, div#reminder {
     background: rgba(209,211,212,.6);
     z-index: 10;
     width: 100%;
@@ -483,10 +587,56 @@ div#settingsMenu ul {
     width: 100%;
 }
 
+div#verification > div {
+    width: 95%;
+    background: rgb(0,169,163);
+    color: rgb(255,255,255);
+    font-size: 1.2em;
+    margin-left: 7px;
+    position: fixed;
+    top: 70px;
+}
+
+div#verification > div > a > img {
+    float: right;
+    padding: 10px;
+    width: 20px;
+}
+
+div#verification p {
+    margin: 25px 0px 25px 0px;
+}
+
+div#photoMenu ul, div#photoDefault ul, div#reminder > div {
+    position: fixed;
+    top: 70px;
+    background: rgb(255,255,255);
+    width: 95%;
+    margin-left: 7px;
+}
+
 div#addMenu li, div#settingsMenu li {
     padding: 12px 12px 15px 12px;
     border-bottom: 1px solid rgba(255,255,255,.7);
     color: rgb(255,255,255);
+}
+
+div#photoMenu li, div#photoDefault li, div#reminder li {
+    padding: 12px 12px 15px 12px;
+    border-bottom: 1px solid rgba(209,211,212,.8);
+    color: rgb(0,169,163);
+}
+
+div#photoMenu li.optionsHeader, div#photoDefault li.optionsHeader, div#reminder li.optionsHeader {
+    background-color: rgb(0,169,163);
+    color: rgb(255,255,255);
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+div#photoMenu li.optionsHeader img, div#photoDefault li.optionsHeader img {
+    float: right;
+    width: 20px;
 }
 
 
@@ -544,17 +694,56 @@ div#selectJobs button.textOnly  {
 	margin: 15px 0px 0px 0px;
 }
 
-div#selectValue nav#toggleBar {
-    margin-left: 65px;
+div#verification span.done {
+    color: rgb(255,255,255);
+    border-top: 1px solid rgb(255,255,255);
+    border-right: 1px solid rgb(255,255,255);
+    width: 20%;
 }
+
+div#verification span.task {
+    color: rgb(255,255,255);
+    border-top: 1px solid rgb(255,255,255);
+    width: 67%;
+}
+
+div#reminder span.okay {
+    color: rgb(0,169,163);
+    border-top: 1px solid rgb(0,169,163);
+    border-right: 1px solid rgb(0,169,163);
+    width: 20%;
+}
+
+div#reminder span.task {
+    color: rgb(0,169,163);
+    border-top: 1px solid rgb(0,169,163);
+    width: 67%;
+}
+
+div#verification span.task, div#verification span.done, div#reminder span.task, div#reminder span.okay  {	
+    background: none;
+	display: inline-block;	
+	margin-top: 35px;	
+	padding: 10px;			
+	line-height: normal;
+	-webkit-appearance: none;	
+	font-weight: 200;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    float: left;
+    text-align: center;
+}
+
+
 
 
 /* Select Frequency, Group Benefit Choices, Group Sorting Choices
 -------------------------------------------------------------- */
 
-div#selectFrequency input, div#groupBenefitChoices article input {
+div#selectFrequency input[type="radio"], div#selectFrequency input[type="checkbox"], div#selectFrequency input[type="date"], div#selectFrequency input[type="time"], div#groupBenefitChoices article input {
     margin-left: 12px;
 }
+
+div#selectFrequency input.save
 
 div#groupSortingChoices input[type="text"] {
     margin-top: 0;
@@ -577,13 +766,13 @@ div#groupBenefitChoices h4 {
     margin-bottom: 10px;
 }
 
-div#selectFrequency h4 {
-    width: 100%;
+div#selectFrequency h4, div#selectValue h4 {
+    width: 90%;
     margin-bottom: 10px;
 }
 
 
-/* Select Members
+/* Select Members, Photos Default
 -------------------------------------------------------------- */
 
 div#selectMembers .addMember {
@@ -596,10 +785,29 @@ div#selectMembers div {
     margin: 25px 0px 40px 10px;
 }
 
-div#selectMembers div img {
+div#selectMembers div div, div#photoDefault ul li div div {
     margin: 0px 2px 10px 2px;
+    float: left;
 }
 
+div#photoDefault ul li div div img {
+    width: 85px;
+}
+
+.selectedImage {
+    border: 1px solid rgb(0,169,163);
+    z-index: 1;
+}
+
+div#selectMembers div div img.selectedMember, div#photoDefault img.selectedImage {
+    position: relative;
+    margin-left: -35px;
+    z-index: 10;
+}
+
+div#photosDefault ul li div {
+    margin: 20px 0px 40px 5px;
+}
 
 
 /* Login
@@ -645,8 +853,15 @@ div#login aside a {
 
 div#login input.login {
     margin: 0;
-    width: 82%;
+    width: 81%;
     cursor: pointer;
+}
+
+div#login p#message {
+    color: rgb(255,255,255);
+    font-weight: 100;
+    font-size: 1.1em;
+    margin-bottom: 20px;
 }
 
 
@@ -798,7 +1013,9 @@ button  {
 	border-radius: 4px;
 	margin: 10px 20px 0px 0px;
 	float: left;
-	background: no-repeat center url('../images/addSmall.png');
+	/*background: no-repeat center url('../images/addSmall.png');*/
+	background: no-repeat center url('../images/profileMom.png');
+	
 }
 
 
