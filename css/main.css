@@ -543,12 +543,12 @@ div#rewardsSpend div.newWishlistBag {
 /* Assign Job
 -------------------------------------------------------------- */
 
-div#assignJob ul, div#assignJobComplete ul, div#memberSettings ul, div#newBenefit ul, div#newValue ul, div#newJob ul, div#newBenefit ul, div#newGroup ul, div#newMember ul, div#groupSortingChoices ul {
+div#assignJob ul, div#assignJobComplete ul, div#assignJobAlmost ul, div#memberSettings ul, div#newBenefit ul, div#newValue ul, div#newJob ul, div#newJobComplete ul, div#newBenefit ul, div#newGroup ul, div#newMember ul, div#groupSortingChoices ul {
     list-style-type: none;
     width: 100%;
 }
 
-div#assignJob li, div#assignJobComplete li, div#memberSettings li, div#newBenefit li, div#newValue li, div#newJob li, div#newBenefit li, div#newGroup li, div#newMember li, div#groupSortingChoices li {
+div#assignJob li, div#assignJobComplete li, div#assignJobAlmost li, div#memberSettings li, div#newBenefit li, div#newValue li, div#newJob li, div#newJobComplete li, div#newBenefit li, div#newGroup li, div#newMember li, div#groupSortingChoices li {
     padding: 12px 12px 15px 12px;
     border-bottom: 1px solid rgba(255,255,255,.7);
     color: rgb(65,64,66);
@@ -556,23 +556,24 @@ div#assignJob li, div#assignJobComplete li, div#memberSettings li, div#newBenefi
     clear: both;
 }
 
-div#assignJob li img, div#assignJobComplete li img, div#memberSettings li img, div#newBenefit li img, div#newValue li img, div#newJob li img, div#newBenefit li img, div#newGroup li img, div#newMember li img {
+div#assignJob li img, div#assignJobComplete li img, div#assignJobAlmost li img, div#memberSettings li img, div#newBenefit li img, div#newValue li img, div#newJob li img, div#newJobComplete li img, div#newBenefit li img, div#newGroup li img, div#newMember li img {
     float: right;
 }
 
-div#assignJobComplete img.assignedTo {
-    width: 20px;
+div#assignJobComplete img.assignedTo, div#assignJobAlmost img.assignedTo {
+    width: 25px;
+    margin-right: 5px;
     border: 1px solid rgb(0,169,163);
     float: right;
 }
 
-div#assignJob p.output, div#assignJobComplete p.output, div#memberSettings p.output, div#newBenefit p.output, div#newValue p.output, div#newJob p.output, div#newBenefit p.output, div#newGroup p.output, div#newMember p.output {
+div#assignJob p.output, div#assignJobComplete p.output, div#assignJobAlmost p.output, div#memberSettings p.output, div#newBenefit p.output, div#newValue p.output, div#newJob p.output, div#newJobComplete p.output, div#newBenefit p.output, div#newGroup p.output, div#newMember p.output {
     color: rgb(128,130,133);
     font-weight: 100;
     float: left;
 }
 
-div#assignJob p.itemLabel, div#assignJobComplete p.itemLabel, div#newGroup p.itemLabel {
+div#assignJob p.itemLabel, div#assignJobComplete p.itemLabel, div#assignJobAlmost p.itemLabel, div#newGroup p.itemLabel, div#newJob p.itemLabel, div#newJobComplete p.itemLabel {
     width: 60%;
     float: left;
 }
@@ -656,28 +657,28 @@ div#photoMenu li.optionsHeader img, div#photoDefault li.optionsHeader img {
 /* Select Job, Select Value, Member Jobs
 -------------------------------------------------------------- */
 
-div#selectJobs table, div#selectValue table, div#memberSettings table {
+div#selectJobs table, div#selectValue table, div#memberSettings table, div#selectEvent table {
     width: 100%;
     margin: 30px 0px 30px 0px;   
 }
 
-div#selectJobs td, div#selectValue td, div#memberSettings td {
+div#selectJobs td, div#selectValue td, div#memberSettings td, div#selectEvent td {
     padding: 10px 0px 10px 12px;
     vertical-align: middle;
 }
 
-div#selectJobs th, div#selectValue th {
+div#selectJobs th, div#selectValue th, div#selectEvent th {
     color: rgb(88,89,91);
     padding: 10px 0px 10px 12px;
     font-weight: 200;
     text-align: left;
 }
 
-div#selectJobs .odd, div#selectValue .odd {
+div#selectJobs .odd, div#selectValue .odd, div#selectEvent .odd {
     background: rgb(250,251,251);
 }
 
-div#selectJobs #search { 
+div#selectJobs #search, div#selectEvent #search { 
     text-align: right;
     display: block; 
     width: 70%;               
@@ -693,7 +694,7 @@ div#selectJobs #search {
 	background: no-repeat left url("../images/search.png");
 }
 
-div#selectJobs button.textOnly  {	
+div#selectJobs button.textOnly, div#selectEvent button.textOnly  {	
     background: none;
 	display: inline-block;	
 	color: rgb(0,169,163);	
@@ -752,14 +753,17 @@ div#verification span.task, div#verification span.done, div#reminder span.task, 
 /* Select Frequency, Group Benefit Choices, Group Sorting Choices
 -------------------------------------------------------------- */
 
-div#selectFrequency input[type="radio"], div#selectFrequency input[type="checkbox"], div#selectFrequency input[type="date"], div#selectFrequency input[type="time"], div#groupBenefitChoices article input {
+div#selectFrequency input[type="radio"], div#selectFrequency input[type="checkbox"], div#selectFrequency input[type="date"], div#selectFrequency input[type="time"], div#groupBenefitChoices article input, div#selectEvent input[type="text"], div#newMember input[type="text"], div#newGroup input[type="text"], div#newJob input[type="text"], div#memberSettings input[type="text"] {
     margin-left: 12px;
+    margin-bottom: 10px;
 }
 
-div#selectFrequency input.save
+div#memberSettings input[type="time"] {
+    margin-top: 10px;
+}
 
 div#groupSortingChoices input[type="text"] {
-    margin-top: 0;
+    margin-top: 0px !important;
 }
 
 div#groupSortingChoices div.right {
@@ -779,7 +783,7 @@ div#groupBenefitChoices h4 {
     margin-bottom: 10px;
 }
 
-div#selectFrequency h4, div#selectValue h4 {
+div#selectFrequency h4, div#selectValue h4, div#selectEvent h4 {
     width: 90%;
     margin-bottom: 10px;
 }
@@ -885,7 +889,6 @@ div#login p#message {
 input[type="date"], input[type="time"], input[type="text"], input[type="search"], textarea {
     border: .5px solid rgb(200,199,199);
     padding: 5px;
-    margin-top: 10px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1em;
     color: rgb(128,130,133);
@@ -893,7 +896,7 @@ input[type="date"], input[type="time"], input[type="text"], input[type="search"]
 }
 
 input.long {
-    width: 90%;
+    width: 88%;
 }
 
 input[type="email"], input[type="password"] {
@@ -1017,7 +1020,7 @@ button  {
 /* Divs
 -------------------------------------------------------------- */
 
-div#memberSettings .icon, div#assignJobComplete .icon, div#assignJob .icon {
+div#memberSettings .icon, div#assignJobComplete .icon, div#assignJob .icon, div#newJob .icon, div#newJobComplete .icon, div#assignJobAlmost .icon {
     border: 2px dashed rgb(128,130,133);
     width: 80px;
     height: 60px;
@@ -1036,8 +1039,12 @@ div#assignJobComplete .icon {
 	background: no-repeat center url('../images/viola.png');	
 }
 
-div#assignJob .icon {
+div#assignJob .icon, div#newJob .icon {
 	background: no-repeat center url('../images/addSmall.png');	
+}
+
+div#assignJobAlmost .icon, div#newJobComplete .icon {
+	background: no-repeat center url('../images/setTable.png');	
 }
 
 

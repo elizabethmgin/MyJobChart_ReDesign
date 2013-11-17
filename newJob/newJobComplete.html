@@ -1,0 +1,47 @@
+	<nav id = "navBar" class="center">
+		<h2>New Job</h2>
+	</nav>
+	<div class="clear"></div>
+	<div id="newJobComplete">	
+		<ul>
+			<li>
+				<input type="text" name="job_name" value="Set table" class="long"> <span class="blue">*</span>
+			</li>
+			<a href="newJob/selectValue.html">
+				<li>
+					<p class="itemLabel">Benefit</p>
+					<p id="newJob_benefit" class="output">$1</p>
+					<img src="images/smallArrow.png">
+					<div class="clear"></div>
+				</li>
+			</a>
+			<a href="newJob/selectFrequency.html">
+				<li>
+					<p class="itemLabel">Frequency</p>
+					<p id="newJob_frequency" class="output"></p>
+					<img src="images/smallArrow.png">
+					<div class="clear"></div>
+				</li>
+			</a>
+			<li>
+				<textarea rows="" cols="" name="newJob_note">Choose your own frequency.</textarea>
+			</li>
+			<li>Details<br />
+				<div class="right">
+				<input type="checkbox" name="details_urgent" id="urgent" value="urgent"><label for="urgent">Urgent</label><br />
+				<input type="checkbox" name="details_extra" id="extra" value="extra" checked><label for="extra">Extra</label><br />
+				<input type="checkbox" name="details_trading" id="trading" value="open" checked><label for="trading">Open for Trading</label>
+				</div>
+				<div class="clear"></div></li>
+			<a href="newJob/photoMenu.html">
+				<li>Select job icon
+					<div class="clear"></div>
+					<div class="icon"></div>
+					<img src="images/smallArrow.png">
+					<div class="clear"></div>
+				</li>
+			</a>
+		</ul>
+		<a href="week.html"><button type="button">Cancel</button></a>
+		<a href="newJob/verificationAssignJobNow.html"><input type="submit" name="create_job" value="Create Job"></a>
+	</div>
