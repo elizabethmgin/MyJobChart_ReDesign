@@ -1,0 +1,18 @@
+	<nav id = "navBar" class="center">
+		<h2>New Member</h2>
+	</nav>
+	<div class="clear"></div>
+	<div id="newMember">	
+		<ul>
+			<li><input type="text" name="member_fname" placeholder="first name" class="long"> <span class="blue">*</span><br />
+				<input type="text" name="member_lname" placeholder="last name" class="long"> <span class="blue">*</span><br />
+				<input type="text" name="member_email" placeholder="email address" class="long"> <span class="blue">*</span></li>
+			<li>Privileges <span class="blue">*</span> 
+				<div class="right"><input type="radio" name="privileges" value="admin"><label for="admin">Admin</label><input type="radio" name="privileges" value="member" checked><label for="member">Member</label></div>
+				<div class="clear"></div>
+			</li>
+			<li><input type="checkbox" name="wishlist" value="wishlist" checked><label for="wishlist">Wishlist items require admin approval</label></li>
+		</ul>
+		<a href="assignJob/selectMembers.html"><button type="button">Cancel</button></a>
+		<a href="assignJob/assignJobComplete.html"><input type="submit" name="create_member" value="Create Member"></a>
+	</div>

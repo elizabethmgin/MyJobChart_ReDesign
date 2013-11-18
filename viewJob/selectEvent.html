@@ -1,0 +1,38 @@
+
+	
+	<nav id = "navBar" class="center">
+		<a href="viewJob/vacuumHouse.html" id="left"><img src="images/back.png"></a>
+		<h2>Select Event</h2>
+	</nav>
+	<div class="clear"></div>
+	<div id="selectEvent">
+		<div class="center">
+			<nav id = "toggleBar">
+				<a id="left" class="selected" href="viewJob/selectEvent.html">Event</a><a id="right" href="viewJob/selectValue.html">Money</a>
+			</nav>
+		</div>
+		<h4>New event</h4>
+		<input type="text" placeholder="New event" value="Friday night">
+		
+		<h4>Search events</h4>
+		<input type="search" id="search"><button type="button" class="textOnly">Cancel</button>
+		<table>
+			<tr>
+				<td>TV time</td>
+				<td><input type="radio" name="viewJob_benefit" value="TV time"></td>
+			</tr>
+			<tr class="odd">
+				<td>Football game</td>
+				<td><input type="radio" name="viewJob_benefit" value="Football game" checked></td>
+			</tr>
+			<tr>
+				<td>School dance</td>
+				<td><input type="radio" name="viewJob_benefit" value="School dance"></td>
+			</tr>
+			<tr class="odd">
+				<td>Ice cream</td>
+				<td><input type="radio" name="viewJob_benefit" value="Ice cream"></td>
+			</tr>
+		</table>
+		<a href="viewJob/vacuumHouse.html"><input type="submit" name="select_benefit" class="save" value="Select Benefit"></a>
+	</div>

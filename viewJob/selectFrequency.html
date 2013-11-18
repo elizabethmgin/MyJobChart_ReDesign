@@ -1,0 +1,38 @@
+
+	<nav id = "navBar" class="center">
+		<a href="viewJob/vacuumHouse.html" id="left"><img src="images/back.png"></a>
+		<h2>Select Frequency</h2>
+	</nav>
+	<div class="clear"></div>
+	<div id="selectFrequency">
+		<article class="left">
+		<h4>Occurrence</h4>
+		<input type="radio" name="viewJob_occurence" value="weekly"><label for="weekly">Weekly</label><br />
+		<input type="radio" name="viewJob_occurence" value="biweekly" checked><label for="biweekly">Biweekly</label><br />
+		<input type="checkbox" name="viewJob_recurring" value="recurring" checked><label for="recurring">Recurring</label>
+		
+		<h4>Start date</h4>
+		<input type="date" name="viewJob_start_date" size="15">
+		
+		<h4>End date</h4>
+		<input type="date" name="viewJob_end_date" size="15">
+		
+		<h4>Deadline</h4>
+		<input type="time" name="viewJob_deadline_time" size="15"><br />
+		<input type="date" name="viewJob_deadline_date" size="15">
+		</article>
+		
+		<article class="right">
+		<h4>Days</h4>
+		<input type="checkbox" name="viewJob_days" value="Everyday"><label for="everyday">Everyday</label><br />
+		<input type="checkbox" name="viewJob_days" value="M"><label for="monday">Monday</label><br />
+		<input type="checkbox" name="viewJob_days" value="T"><label for="tuesday">Tuesday</label><br />
+		<input type="checkbox" name="viewJob_days" value="W"><label for="wednesay">Wednesday</label><br />
+		<input type="checkbox" name="viewJob_days" value="Th"><label for="thursday">Thursday</label><br />
+		<input type="checkbox" name="viewJob_days" value="F"><label for="friday">Friday</label><br />
+		<input type="checkbox" name="viewJob_days" value="Sat" checked><label for="saturday">Saturday</label><br />
+		<input type="checkbox" name="viewJob_days" value="Sun"><label for="sunday">Sunday</label>
+		</article>
+		
+		<a href="viewJob/vacuumHouse.html"><input type="submit" name="save_frequency" class="save" value="Save Frequency"></a>
+	</div>

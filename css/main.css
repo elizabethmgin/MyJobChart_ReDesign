@@ -299,7 +299,7 @@ div#week .quarter, div#week .third, div#week .threeQuarter {
     margin: 4px 4px 0px 0px;
 }
 
-div#week details, div#reminder details {
+div#week p.info, div#reminder p.info {
     margin: 5px 0px 0px 10px;
     color: rgb(255,255,255);
     font-style: normal;
@@ -342,7 +342,7 @@ div.notification p {
     float: left;
 }
 
-div.notification details {
+div.notification p.info {
     float: left;
     margin-left: 10px;
 }
@@ -377,7 +377,7 @@ div#notifications .dayNight {
     margin: 5px 0px 0px 5px;
 }
 
-div#notifications details {
+div#notifications p.info {
     margin: 5px 0px 0px 10px;
     color: rgb(255,255,255);
     font-style: normal;
@@ -470,7 +470,7 @@ div.swatches img {
     padding: 2px 12px 0px 0px;
 }
 
-div#groups details {
+div#groups p.info {
     font-style: normal;
     font-size: .8em;
     float: left;
@@ -478,7 +478,7 @@ div#groups details {
     clear: both;
 }
 
-div#groups details a {
+div#groups p.info a {
     color: rgb(255,255,255);
     float: left;
 }
@@ -506,7 +506,7 @@ div#rewardsSpend div#amount {
     box-shadow: 3px 3px 5px #888888;
 }
 
-div#rewardsSort details, div#rewardsSpend details {
+div#rewardsSort p.info, div#rewardsSpend p.info {
     text-align: center;
     width: 100%;
 }
@@ -543,12 +543,12 @@ div#rewardsSpend div.newWishlistBag {
 /* Assign Job
 -------------------------------------------------------------- */
 
-div#assignJob ul, div#assignJobComplete ul, div#assignJobAlmost ul, div#memberSettings ul, div#newBenefit ul, div#newValue ul, div#newJob ul, div#newJobComplete ul, div#newBenefit ul, div#newGroup ul, div#newMember ul, div#groupSortingChoices ul {
+div#assignJob ul, div#assignJobComplete ul, div#assignJobAlmost ul, div#viewJob ul, div#memberSettings ul, div#newBenefit ul, div#newBenefitComplete ul, div#newValue ul, div#newJob ul, div#newJobComplete ul, div#newBenefit ul, div#newGroup ul, div#newMember ul, div#groupSortingChoices ul, div#newSortCategory ul {
     list-style-type: none;
     width: 100%;
 }
 
-div#assignJob li, div#assignJobComplete li, div#assignJobAlmost li, div#memberSettings li, div#newBenefit li, div#newValue li, div#newJob li, div#newJobComplete li, div#newBenefit li, div#newGroup li, div#newMember li, div#groupSortingChoices li {
+div#assignJob li, div#assignJobComplete li, div#assignJobAlmost li, div#viewJob li, div#memberSettings li, div#newBenefit li, div#newBenefitComplete li, div#newValue li, div#newJob li, div#newJobComplete li, div#newBenefit li, div#newGroup li, div#newMember li, div#groupSortingChoices li, div#newSortCategory li {
     padding: 12px 12px 15px 12px;
     border-bottom: 1px solid rgba(255,255,255,.7);
     color: rgb(65,64,66);
@@ -556,25 +556,25 @@ div#assignJob li, div#assignJobComplete li, div#assignJobAlmost li, div#memberSe
     clear: both;
 }
 
-div#assignJob li img, div#assignJobComplete li img, div#assignJobAlmost li img, div#memberSettings li img, div#newBenefit li img, div#newValue li img, div#newJob li img, div#newJobComplete li img, div#newBenefit li img, div#newGroup li img, div#newMember li img {
+div#assignJob li img, div#assignJobComplete li img, div#assignJobAlmost li img, div#viewJob li img, div#memberSettings li img, div#newBenefit li img, div#newBenefitComplete li img, div#newValue li img, div#newJob li img, div#newJobComplete li img, div#newBenefit li img, div#newGroup li img, div#newMember li img {
     float: right;
 }
 
-div#assignJobComplete img.assignedTo, div#assignJobAlmost img.assignedTo {
+div#assignJobComplete img.assignedTo, div#assignJobAlmost img.assignedTo, div#newBenefitComplete img.assignedTo, div#viewJob img.assignedTo {
     width: 25px;
     margin-right: 5px;
     border: 1px solid rgb(0,169,163);
     float: right;
 }
 
-div#assignJob p.output, div#assignJobComplete p.output, div#assignJobAlmost p.output, div#memberSettings p.output, div#newBenefit p.output, div#newValue p.output, div#newJob p.output, div#newJobComplete p.output, div#newBenefit p.output, div#newGroup p.output, div#newMember p.output {
+div#assignJob p.output, div#assignJobComplete p.output, div#assignJobAlmost p.output, div#viewJob p.output, div#memberSettings p.output, div#newBenefit p.output, div#newBenefitComplete p.output, div#newValue p.output, div#newJob p.output, div#newJobComplete p.output, div#newBenefit p.output, div#newGroup p.output, div#newMember p.output {
     color: rgb(128,130,133);
     font-weight: 100;
     float: left;
 }
 
-div#assignJob p.itemLabel, div#assignJobComplete p.itemLabel, div#assignJobAlmost p.itemLabel, div#newGroup p.itemLabel, div#newJob p.itemLabel, div#newJobComplete p.itemLabel {
-    width: 60%;
+div#assignJob p.itemLabel, div#assignJobComplete p.itemLabel, div#assignJobAlmost p.itemLabel, div#viewJob p.itemLabel, div#newGroup p.itemLabel, div#newJob p.itemLabel, div#newJobComplete p.itemLabel, div#newBenefit p.itemLabel, div#newBenefitComplete p.itemLabel {
+    width: 55%;
     float: left;
 }
 
@@ -715,6 +715,12 @@ div#verification span.done {
     width: 20%;
 }
 
+div#verification span.okay {
+    color: rgb(255,255,255);
+    border-top: 1px solid rgb(255,255,255);
+    width: 95%;
+}
+
 div#verification span.task {
     color: rgb(255,255,255);
     border-top: 1px solid rgb(255,255,255);
@@ -734,7 +740,7 @@ div#reminder span.task {
     width: 67%;
 }
 
-div#verification span.task, div#verification span.done, div#reminder span.task, div#reminder span.okay  {	
+div#verification span.task, div#verification span.done, div#reminder span.task, div#reminder span.okay, div#verification span.okay  {	
     background: none;
 	display: inline-block;	
 	margin-top: 35px;	
@@ -753,7 +759,7 @@ div#verification span.task, div#verification span.done, div#reminder span.task, 
 /* Select Frequency, Group Benefit Choices, Group Sorting Choices
 -------------------------------------------------------------- */
 
-div#selectFrequency input[type="radio"], div#selectFrequency input[type="checkbox"], div#selectFrequency input[type="date"], div#selectFrequency input[type="time"], div#groupBenefitChoices article input, div#selectEvent input[type="text"], div#newMember input[type="text"], div#newGroup input[type="text"], div#newJob input[type="text"], div#memberSettings input[type="text"] {
+div#selectFrequency input[type="radio"], div#selectFrequency input[type="checkbox"], div#selectFrequency input[type="date"], div#selectFrequency input[type="time"], div#groupBenefitChoices article input, div#selectEvent input[type="text"], div#newMember input[type="text"], div#newSortCategory input[type="text"], div#newGroup input[type="text"], div#newJob input[type="text"], div#memberSettings input[type="text"] {
     margin-left: 12px;
     margin-bottom: 10px;
 }
@@ -798,11 +804,12 @@ div#selectMembers .addMember {
     height: 94px;
 }
 
-div#selectMembers div {
+div#selectMembers > div {
     margin: 25px 0px 40px 10px;
+    float: left;
 }
 
-div#selectMembers div div, div#photoDefault ul li div div {
+div#selectMembers > div div, div#photoDefault ul li div div {
     margin: 0px 2px 10px 2px;
     float: left;
 }
@@ -816,7 +823,7 @@ div#photoDefault ul li div div img {
     z-index: 1;
 }
 
-div#selectMembers div div img.selectedMember, div#photoDefault img.selectedImage {
+div#selectMembers > div div img.selectedMember, div#photoDefault img.selectedImage {
     position: relative;
     margin-left: -35px;
     z-index: 10;
@@ -824,6 +831,11 @@ div#selectMembers div div img.selectedMember, div#photoDefault img.selectedImage
 
 div#photosDefault ul li div {
     margin: 20px 0px 40px 5px;
+}
+
+div#selectMembers p {
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 
@@ -1015,12 +1027,16 @@ button  {
     color: rgb(188,190,192);
 }
 
+.gray {
+    color: rgb(128,130,133);
+}
+
 
 
 /* Divs
 -------------------------------------------------------------- */
 
-div#memberSettings .icon, div#assignJobComplete .icon, div#assignJob .icon, div#newJob .icon, div#newJobComplete .icon, div#assignJobAlmost .icon {
+div#memberSettings .icon, div#assignJobComplete .icon, div#assignJob .icon, div#newJob .icon, div#newJobComplete .icon, div#assignJobAlmost .icon, div#viewJob .icon {
     border: 2px dashed rgb(128,130,133);
     width: 80px;
     height: 60px;
@@ -1047,11 +1063,19 @@ div#assignJobAlmost .icon, div#newJobComplete .icon {
 	background: no-repeat center url('../images/setTable.png');	
 }
 
+div#viewJob #vacuumHouse {
+	background: no-repeat center url('../images/vacuumHouse.png');	
+}
+
+div#viewJob #practiceViola {
+	background: no-repeat center url('../images/viola.png');	
+}
+
 
 /* HTML5 Elements
 -------------------------------------------------------------- */
 
-details, .privilege, .mini {
+p.info, .privilege, .mini {
     font-style: italic;
     font-size: .7em;
     font-weight: 200;
