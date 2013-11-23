@@ -25,9 +25,10 @@ html {
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
     color: rgb(128,130,133);
-    font-weight: 200;
+    font-weight: 400;
     width: 320px;
     height: 568px;
+    font-size: 1em;
 }
 
 /* Headers
@@ -41,7 +42,7 @@ h1 {
     text-align: center;
     color: rgb(255,255,255);
     font-size: 2.7em;
-    font-weight: 400;
+    font-weight: 200;
     margin: 30px 0px 50px 0px;
     padding-bottom: 10px;
     border-bottom: 1px solid rgb(255,255,255);
@@ -51,7 +52,7 @@ h2 {
     font-size: 1.4em;
     color: rgb(0,169,163);
     display: inline-block;
-    font-weight: 100;
+    font-weight: 300;
     text-align: center;
 }
 
@@ -60,7 +61,7 @@ h4 {
     border-bottom: 1px solid rgb(147,149,152);
     color: rgb(65,64,66);
     font-size: 1.1em;
-    font-weight: 200;
+    font-weight: 400;
     padding: 0px 0px 3px 12px;
     margin-top: 30px;
 }
@@ -75,7 +76,7 @@ h5 {
 
 h6 {
     padding: 30px 0px 0px 12px;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.8em;
     float: left;
 }
@@ -98,7 +99,7 @@ h9 {
 
 nav#statusBar {
     height: 20px;
-    width: 100%;Family
+    width: 100%;
     background-color: rgb(255,255,255);
     text-align: center;
 }
@@ -230,12 +231,12 @@ div#calendar td {
 
 div#calendar a.pastMonth {
     color: rgb(128,130,133);
-    font-weight: 100;
+    font-weight: 300;
 }
 
 div#calendar a {
     color: rgb(88,89,91);
-    font-weight: 200;
+    font-weight: 300;
 }
 
 div#calendar td.today {
@@ -451,7 +452,7 @@ div.new img {
 
 div#memberSettings th {
     font-style: italic;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 div.swatches {
@@ -514,7 +515,7 @@ div#rewardsSort p.info, div#rewardsSpend p.info {
 div#rewardsSpend div.wishlist {
     float: left;
     margin: 20px 30px 0px 20px;
-    font-weight: 100;
+    font-weight: 300;
     
 }
 
@@ -543,12 +544,12 @@ div#rewardsSpend div.newWishlistBag {
 /* Assign Job
 -------------------------------------------------------------- */
 
-div#assignJob ul, div#assignJobComplete ul, div#assignJobAlmost ul, div#viewJob ul, div#memberSettings ul, div#newBenefit ul, div#newBenefitComplete ul, div#newValue ul, div#newJob ul, div#newJobComplete ul, div#newBenefit ul, div#newGroup ul, div#newMember ul, div#groupSortingChoices ul, div#newSortCategory ul {
+div#assignJob ul, div#assignJobComplete ul, div#tradeJob ul, div#tradeJobComplete ul, div#assignJobAlmost ul, div#viewJob ul, div#memberSettings ul, div#newBenefit ul, div#newBenefitComplete ul, div#newValue ul, div#newJob ul, div#newJobComplete ul, div#newBenefit ul, div#newGroup ul, div#newMember ul, div#groupSortingChoices ul, div#newSortCategory ul, div#addJob ul {
     list-style-type: none;
     width: 100%;
 }
 
-div#assignJob li, div#assignJobComplete li, div#assignJobAlmost li, div#viewJob li, div#memberSettings li, div#newBenefit li, div#newBenefitComplete li, div#newValue li, div#newJob li, div#newJobComplete li, div#newBenefit li, div#newGroup li, div#newMember li, div#groupSortingChoices li, div#newSortCategory li {
+div#assignJob li, div#assignJobComplete li, div#tradeJob li, div#tradeJobComplete li, div#assignJobAlmost li, div#viewJob li, div#memberSettings li, div#newBenefit li, div#newBenefitComplete li, div#newValue li, div#newJob li, div#newJobComplete li, div#newBenefit li, div#newGroup li, div#newMember li, div#groupSortingChoices li, div#newSortCategory li, div#addJob li {
     padding: 12px 12px 15px 12px;
     border-bottom: 1px solid rgba(255,255,255,.7);
     color: rgb(65,64,66);
@@ -556,24 +557,24 @@ div#assignJob li, div#assignJobComplete li, div#assignJobAlmost li, div#viewJob 
     clear: both;
 }
 
-div#assignJob li img, div#assignJobComplete li img, div#assignJobAlmost li img, div#viewJob li img, div#memberSettings li img, div#newBenefit li img, div#newBenefitComplete li img, div#newValue li img, div#newJob li img, div#newJobComplete li img, div#newBenefit li img, div#newGroup li img, div#newMember li img {
+div#assignJob li img, div#assignJobComplete li img, div#tradeJob li img, div#tradeJobComplete li img, div#assignJobAlmost li img, div#viewJob li img, div#memberSettings li img, div#newBenefit li img, div#newBenefitComplete li img, div#newValue li img, div#newJob li img, div#newJobComplete li img, div#newBenefit li img, div#newGroup li img, div#newMember li img, div#addJob li img {
     float: right;
 }
 
-div#assignJobComplete img.assignedTo, div#assignJobAlmost img.assignedTo, div#newBenefitComplete img.assignedTo, div#viewJob img.assignedTo {
+div#assignJobComplete img.assignedTo, div#assignJobAlmost img.assignedTo, div#newBenefitComplete img.assignedTo, div#viewJob img.assignedTo, div#tradeJobComplete img.assignedTo, div#tradeJob img.assignedTo {
     width: 25px;
     margin-right: 5px;
     border: 1px solid rgb(0,169,163);
     float: right;
 }
 
-div#assignJob p.output, div#assignJobComplete p.output, div#assignJobAlmost p.output, div#viewJob p.output, div#memberSettings p.output, div#newBenefit p.output, div#newBenefitComplete p.output, div#newValue p.output, div#newJob p.output, div#newJobComplete p.output, div#newBenefit p.output, div#newGroup p.output, div#newMember p.output {
+div#assignJob p.output, div#assignJobComplete p.output, div#tradeJob p.output, div#tradeJobComplete p.output, div#assignJobAlmost p.output, div#viewJob p.output, div#memberSettings p.output, div#newBenefit p.output, div#newBenefitComplete p.output, div#newValue p.output, div#newJob p.output, div#newJobComplete p.output, div#newBenefit p.output, div#newGroup p.output, div#newMember p.output, div#addJob p.output {
     color: rgb(128,130,133);
-    font-weight: 100;
+    font-weight: 300;
     float: left;
 }
 
-div#assignJob p.itemLabel, div#assignJobComplete p.itemLabel, div#assignJobAlmost p.itemLabel, div#viewJob p.itemLabel, div#newGroup p.itemLabel, div#newJob p.itemLabel, div#newJobComplete p.itemLabel, div#newBenefit p.itemLabel, div#newBenefitComplete p.itemLabel {
+div#assignJob p.itemLabel, div#assignJobComplete p.itemLabel, div#tradeJob p.itemLabel, div#tradeJobComplete p.itemLabel, div#assignJobAlmost p.itemLabel, div#viewJob p.itemLabel, div#newGroup p.itemLabel, div#newJob p.itemLabel, div#newJobComplete p.itemLabel, div#newBenefit p.itemLabel, div#newBenefitComplete p.itemLabel, div#addJob p.itemLabel {
     width: 55%;
     float: left;
 }
@@ -633,6 +634,7 @@ div#addMenu li, div#settingsMenu li {
     padding: 12px 12px 15px 12px;
     border-bottom: 1px solid rgba(255,255,255,.7);
     color: rgb(255,255,255);
+    font-size: 1.2em;
 }
 
 div#photoMenu li, div#photoDefault li, div#reminder li {
@@ -670,7 +672,7 @@ div#selectJobs td, div#selectValue td, div#memberSettings td, div#selectEvent td
 div#selectJobs th, div#selectValue th, div#selectEvent th {
     color: rgb(88,89,91);
     padding: 10px 0px 10px 12px;
-    font-weight: 200;
+    font-weight: 300;
     text-align: left;
 }
 
@@ -702,7 +704,7 @@ div#selectJobs button.textOnly, div#selectEvent button.textOnly  {
 	line-height: normal;
 	-webkit-appearance: none;	
 	font-size: .8em;
-	font-weight: 200;
+	font-weight: 300;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	width: 20%;
 	margin: 15px 0px 0px 0px;
@@ -747,7 +749,7 @@ div#verification span.task, div#verification span.done, div#reminder span.task, 
 	padding: 10px;			
 	line-height: normal;
 	-webkit-appearance: none;	
-	font-weight: 200;
+	font-weight: 300;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     float: left;
     text-align: center;
@@ -761,7 +763,7 @@ div#verification span.task, div#verification span.done, div#reminder span.task, 
 
 div#selectFrequency input[type="radio"], div#selectFrequency input[type="checkbox"], div#selectFrequency input[type="date"], div#selectFrequency input[type="time"], div#groupBenefitChoices article input, div#selectEvent input[type="text"], div#newMember input[type="text"], div#newSortCategory input[type="text"], div#newGroup input[type="text"], div#newJob input[type="text"], div#memberSettings input[type="text"] {
     margin-left: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 div#memberSettings input[type="time"] {
@@ -878,6 +880,7 @@ div#login aside img {
 
 div#login aside a {
     color: rgb(255,255,255);
+    font-weight: 300;
 }
 
 div#login input.login {
@@ -888,7 +891,7 @@ div#login input.login {
 
 div#login p#message {
     color: rgb(255,255,255);
-    font-weight: 100;
+    font-weight: 300;
     font-size: 1.1em;
     margin-bottom: 20px;
 }
@@ -916,7 +919,7 @@ input[type="email"], input[type="password"] {
     padding: 8px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.2em;
-    font-weight: 200;
+    font-weight: 300;
     color: rgb(128,130,133);
     background-color: rgba(255,255,255,.8);
     width: 75%;
@@ -933,7 +936,7 @@ textarea {
 
 input[type="checkbox"] + label, input[type="radio"] + label {
     vertical-align: middle;
-    padding: 10px;
+    padding: 15px;
 }
 
 input[type="checkbox"]:checked + label, input[type="radio"]:checked + label {
@@ -962,7 +965,7 @@ input[type="submit"]   {
 	line-height: 1.5;
 	-webkit-appearance: none;	
 	font-size: 1.2em;
-	font-weight: 200;
+	font-weight: 300;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	width: 60%;
 	margin: 30px 2px;
@@ -986,7 +989,7 @@ button  {
 	line-height: normal;
 	-webkit-appearance: none;	
 	font-size: .9em;
-	font-weight: 200;
+	font-weight: 300;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	width: 30%;
 	margin: 28px 2px 0px 12px;
@@ -996,6 +999,10 @@ button  {
 
 /* Spans
 -------------------------------------------------------------- */
+
+a {
+    color: rgb(0,169,163);
+}
 
 .blue {
     color: rgb(0,169,163);
@@ -1036,7 +1043,7 @@ button  {
 /* Divs
 -------------------------------------------------------------- */
 
-div#memberSettings .icon, div#assignJobComplete .icon, div#assignJob .icon, div#newJob .icon, div#newJobComplete .icon, div#assignJobAlmost .icon, div#viewJob .icon {
+div#memberSettings .icon, div#assignJobComplete .icon, div#assignJob .icon, div#newJob .icon, div#newJobComplete .icon, div#assignJobAlmost .icon, div#viewJob .icon, div#addJob .icon {
     border: 2px dashed rgb(128,130,133);
     width: 80px;
     height: 60px;
@@ -1071,6 +1078,10 @@ div#viewJob #practiceViola {
 	background: no-repeat center url('../images/viola.png');	
 }
 
+div#addJob #batheDog {
+	background: no-repeat center url('../images/batheDog.png');	
+}
+
 
 /* HTML5 Elements
 -------------------------------------------------------------- */
@@ -1078,7 +1089,7 @@ div#viewJob #practiceViola {
 p.info, .privilege, .mini {
     font-style: italic;
     font-size: .7em;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .mini {

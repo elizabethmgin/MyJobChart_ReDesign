@@ -1,0 +1,37 @@
+
+	<nav id = "navBar" class="center">
+		<a href="viewTrade/viewTrade.html" id="left"><img src="images/back.png"></a>
+		<h2>Select Frequency</h2>
+	</nav>
+	<div class="clear"></div>
+	<div id="selectFrequency">
+		<article class="left">
+			<h4>Occurrence</h4>
+			<input type="radio" name="tradeJob_occurence" value="one time" checked><label for="one time">One time</label><br />
+			<input type="radio" name="tradeJob_occurence" value="recurring" ><label for="recurring">Recurring</label>
+			
+			<h4>Start date</h4>
+			<input type="date" name="tradeJob_start_date" size="10">
+			
+			<h4>End date</h4>
+			<input type="date" name="tradeJob_end_date" size="10">
+		</article>
+		<article class="right">
+			<h4>Trade for date</h4>
+			<input type="date" name="tradeJob_for_date" placeholder="12/19/13" size="10">
+
+			<h4>Trade with date</h4>
+			<input type="date" name="tradeJob_with_date" placeholder="12/28/13" ssize="10">
+			<h4>Days</h4>
+			<input type="checkbox" name="tradeJob_days" value="Everyday"><label for="everyday">Everyday</label><br />
+			<input type="checkbox" name="tradeJob_days" value="M"><label for="monday">Monday</label><br />
+			<input type="checkbox" name="tradeJob_days" value="T" ><label for="tuesday">Tuesday</label><br />
+			<input type="checkbox" name="tradeJob_days" value="W" ><label for="wednesay">Wednesday</label><br />
+			<input type="checkbox" name="tradeJob_days" value="Th" checked><label for="thursday">Thursday</label><br />
+			<input type="checkbox" name="tradeJob_days" value="F"><label for="friday">Friday</label><br />
+			<input type="checkbox" name="tradeJob_days" value="Sat" checked><label for="saturday">Saturday</label><br />
+			<input type="checkbox" name="tradeJob_days" value="Sun"><label for="sunday">Sunday</label>
+		</article>
+		
+		<a href="viewTrade/viewTrade.html"><input type="submit" name="save_frequency" class="save" value="Save Frequency"></a>
+	</div>
