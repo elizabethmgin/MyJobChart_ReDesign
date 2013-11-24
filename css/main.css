@@ -272,7 +272,19 @@ div#week h5, div#reminder h5 {
 div#week .quarter {
     width: 24%;
     height: 80px;
+    position: relative;
     float: left;
+    background: no-repeat center center url('../images/profileMom.png');
+}
+
+div#week .quarter:after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
 }
 
 div#reminder .quarter {
