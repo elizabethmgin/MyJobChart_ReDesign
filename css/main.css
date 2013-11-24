@@ -269,14 +269,109 @@ div#week h5, div#reminder h5 {
     padding-left: 8px;
 }
 
+div#week .quarter, div#week .third, div#week .threeQuarter {
+    margin: 4px 4px 0px 0px;
+}
+
 div#week .quarter {
     width: 24%;
     height: 80px;
     position: relative;
     float: left;
-    background: no-repeat center center url('../images/profileMom.png');
 }
 
+div#week .third {
+    width: 49%;
+    height: 80px;
+    position: relative;
+    float: left;
+}
+
+div#week .threeQuarter {
+    width: 74%;
+    height: 164px;
+    position: relative;
+    float: right;
+}
+
+div#week .quarter > img.jobIcon, div#week .third > img.jobIcon {
+    margin: 0 auto;
+    height: 80px;
+    width: 100%;
+    position: relative;
+}
+
+div#week .threeQuarter > img.jobIcon {
+    margin: 0 auto;
+    height: 164px;
+    width: 100%;
+    position: relative;
+}
+
+.blueOverlay7 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,169,163,.8);
+}
+
+.blueOverlay6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,175,171,.8);
+}
+
+.blueOverlay5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,182,179,.8);
+}
+
+.blueOverlay4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46,189,187,.8);
+}
+
+.blueOverlay3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(92,197,196,.8);
+}
+
+.blueOverlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(124,206,205,.8);
+}
+
+.blueOverlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(152,215,214,.8);
+}
+
+/*
 div#week .quarter:after {
     content: ' ';
     position: absolute;
@@ -286,6 +381,7 @@ div#week .quarter:after {
     bottom: 0;
     background-color: rgba(0,0,0,.5);
 }
+*/
 
 div#reminder .quarter {
     width: 24%;
@@ -295,27 +391,11 @@ div#reminder .quarter {
     margin: 30px 0px 0px 30px;
 }
 
-div#week .third {
-    width: 49%;
-    height: 80px;
-    float: left;
-}
-
-div#week .threeQuarter {
-    width: 74%;
-    height: 164px;
-    float: right;
-}
-
-div#week .quarter, div#week .third, div#week .threeQuarter {
-    background-color: rgb(0,169,163);
-    margin: 4px 4px 0px 0px;
-}
-
 div#week p.info, div#reminder p.info {
     margin: 5px 0px 0px 10px;
     color: rgb(255,255,255);
     font-style: normal;
+    font-weight: normal;
     float: left;
 }
 
