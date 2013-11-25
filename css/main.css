@@ -413,6 +413,9 @@ div.notification {
 
 div.notification img.left {
     float: left;
+    height: 100%;
+    left: 0;
+    top: 0;
 }
 
 div.notification img.right {
@@ -504,6 +507,9 @@ div.memberPending {
 
 div.memberPending img.left, div.member img.left {
     float: left;
+    height: 100%;
+    left: 0;
+    top: 0;
 }
 
 div.memberPending button {
@@ -898,6 +904,10 @@ div#selectMembers .addMember {
     height: 94px;
 }
 
+div#selectMembers .memberImg {
+    width: 94px;
+}
+
 div#selectMembers > div {
     margin: 25px 0px 40px 10px;
     float: left;
@@ -915,6 +925,7 @@ div#photoDefault ul li div div img {
 .selectedImage {
     border: 1px solid rgb(0,169,163);
     z-index: 1;
+    width: 94px;
 }
 
 div#selectMembers > div div img.selectedMember, div#photoDefault img.selectedImage {
