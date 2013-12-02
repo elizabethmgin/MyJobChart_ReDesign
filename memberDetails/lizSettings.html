@@ -1,5 +1,5 @@
 	<nav id = "navBar" class="center">
-		<a href="family.html" id="left"><img src="images/back.png"></a>
+		<a href="family.html" class="slideInLeft" id="left"><img src="images/back.png"></a>
 		<h2>Liz's Settings</h2>
 		<a href="settingsMenu.html" id="right"><img src="images/settings.png"></a>
 	</nav>
@@ -15,15 +15,15 @@
 				<input type="text" name="member_lname" value="Monachello" class="long"> <span class="blue">*</span><br />
 				<input type="text" name="member_email" value="emonachello@gmail.com" class="long"> <span class="blue">*</span></li>
 			<li>Privileges <span class="blue">*</span> 
-				<div class="right"><input type="radio" name="privileges" value="admin"><label for="admin">Admin</label><input type="radio" name="privileges" value="member" checked><label for="member">Member</label></div>
+				<div class="right"><input type="radio" name="privileges" value="leader"><label for="leader">Leader</label><input type="radio" name="privileges" value="member" checked><label for="member">Member</label></div>
 				<div class="clear"></div>
 			</li>
-			<li><input type="checkbox" name="wishlist" value="wishlist" checked><label for="wishlist">Wishlist items require admin approval</label></li>
+			<li><input type="checkbox" name="wishlist" value="wishlist" checked><label for="wishlist">Wishlist items require leader approval</label></li>
 		</ul>
 		<a href="memberDetails/lizSettings.html"><input type="submit" class="save" name="save_settings" value="Save Settings"></a>
 	</div>
 	<nav id = "tabBar">
-		<a href="addMenu.html"><img src="images/add.png"></a>
+		<a href="addMenu.html" class="slideInBottom"><img src="images/add.png"></a>
 		<a href="week.html"><img src="images/jobs.png"></a>
 		<a href="sortBenefit/rewardsSort.html"><img src="images/rewards.png"></a>
 	</nav>

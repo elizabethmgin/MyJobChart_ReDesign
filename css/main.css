@@ -680,8 +680,13 @@ div#assignJob p.itemLabel, div#assignJobComplete p.itemLabel, div#tradeJob p.ite
 /* Add Menu, Settings Menu, Photo Menu, Photo Default, Verification
 -------------------------------------------------------------- */
 
-div#addMenu, div#settingsMenu, div#photoMenu, div#photoDefault, div#verification, div#reminder {
+div#photoMenu, div#photoDefault, div#verification, div#reminder {
     background: rgba(209,211,212,.6);
+    z-index: 10;
+    width: 100%;
+}
+
+div#addMenu, div#settingsMenu {
     z-index: 10;
     width: 100%;
 }
