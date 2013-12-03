@@ -11,23 +11,27 @@
 		<div id="amount">$25</div>
 		<p class="info">to sort</p>
 		
-		<h4>Tithe</h4>
-		<input type="range" name="tithe" min="0" max="20" step="1" value="5">
+		<h4>Tithe: <output id="titheValue">5</output></h4>
+		<input type="range" name="tithe" min="0" max="20" step="1" value="5" onchange="titheValue.value=value">
 		
-		<h4>Save</h4>
-		<input type="range" name="save" min="0" max="20" step="1" value="5">
 		
-		<h4>Spend</h4>
-		<input type="range" name="spend" min="0" max="20" step="1" value="10">
+		<h4>Save: <output id="saveValue">5</output></h4>
+		<input type="range" name="save" min="0" max="20" step="1" value="5" onchange="saveValue.value=value">
 		
-		<h4>Family Fund</h4>
-		<input type="range" name="family_fund" min="0" max="20" step="1" value="2">
 		
-		<h4>Share</h4>
-		<input type="range" name="share" min="0" max="20" step="1" value="2">
+		<h4>Spend: <output id="spendValue">10</output></h4>
+		<input type="range" name="spend" min="0" max="20" step="1" value="10" onchange="spendValue.value=value">
 		
-		<h4>Donate</h4>
-		<input type="range" name="share" min="0" max="20" step="1" value="1">
+		
+		<h4>Family Fund: <output id="familyValue">2</output></h4>
+		<input type="range" name="family_fund" min="0" max="20" step="1" value="2" onchange="familyValue.value=value">
+		
+		
+		<h4>Share: <output id="shareValue">2</output></h4>
+		<input type="range" name="share" min="0" max="20" step="1" value="2" onchange="shareValue.value=value">
+		
+		<h4>Donate: <output id="donateValue">1</output></h4>
+		<input type="range" name="share" min="0" max="20" step="1" value="1" onchange="donateValue.value=value">
 		
 		<a href="sortBenefit/newSortChoice.html">
 			<div class="new">

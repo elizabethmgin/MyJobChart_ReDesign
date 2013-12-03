@@ -11,8 +11,8 @@
 				<a id="left" href="viewJob/selectEvent.html">Event</a><a id="right" class="selected" href="viewJob/selectValue.html">Money</a>
 			</nav>
 		</div>
-		<input type="range" name="viewJob_benefit" min="0" max="20" step="1" value="2">
-		<h4>Other jobs worth <span class="blue">$1</span></h4>
+		<input type="range" name="viewJob_benefit" min="0" max="20" step="1" value="1" onchange="jobValue.value=value">
+		<h4>Other jobs worth: <span class="blue">$<output id="jobValue">1</output></span></h4>
 			<table>
 				<tr>
 					<td>Set table</td>
