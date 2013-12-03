@@ -700,7 +700,7 @@ div#addMenu ul {
 
 div#settingsMenu ul {
     position: fixed;
-    top: 29px;
+    /*top: 29px;*/
     background: rgb(90,197,195);
     width: 100%;
 }
