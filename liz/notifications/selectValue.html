@@ -1,0 +1,27 @@
+
+	
+	<nav id = "navBar" class="center">
+		<a href="viewJob/vacuumHouse.html" class="slideInLeft" id="left"><img src="images/back.png"></a>
+		<h2>Select Benefit</h2>
+	</nav>
+	<div class="clear"></div>
+	<div id="selectValue">
+		<div class="center">
+			<nav id = "toggleBar">
+				<a id="left" href="liz/notifications/selectEvent.html">Event</a><a id="right" class="selected" href="liz/notifications/selectValue.html">Money</a>
+			</nav>
+		</div>
+		<input type="range" name="viewJob_benefit" min="0" max="20" step="1" value="1" onchange="jobValue.value=value">
+		<h4>Other jobs worth: <span class="blue">$<output id="jobValue">1</output></span></h4>
+			<table>
+				<tr>
+					<td>Set table</td>
+					<td>$1</td>
+				</tr>
+				<tr class="odd">
+					<td>Sort socks</td>
+					<td>$1</td>
+				</tr>
+			</table>
+		<a href="liz/notifications/practiceViola.html"><input type="submit" name="select_benefit" class="save" value="Select Benefit"></a>
+	</div>

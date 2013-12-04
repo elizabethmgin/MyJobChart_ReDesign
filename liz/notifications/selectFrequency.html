@@ -1,0 +1,38 @@
+
+	<nav id = "navBar" class="center">
+		<a href="liz/notifications/practiceViola.html" class="slideInLeft" id="left"><img src="images/back.png"></a>
+		<h2>Select Frequency</h2>
+	</nav>
+	<div class="clear"></div>
+	<div id="selectFrequency">
+		<article class="left">
+		<h4>Occurrence</h4>
+		<input type="radio" name="viewJob_occurence" value="weekly" checked><label for="weekly">Weekly</label><br /><br />
+		<input type="radio" name="viewJob_occurence" value="biweekly"><label for="biweekly">Biweekly</label><br /><br />
+		<input type="checkbox" name="viewJob_recurring" value="recurring" checked><label for="recurring">Recurring</label>
+		
+		<h4>Start date</h4>
+		<input type="date" name="viewJob_start_date" size="10">
+		
+		<h4>End date</h4>
+		<input type="date" name="viewJob_end_date" size="10">
+		
+		<h4>Deadline</h4>
+		<input type="time" name="viewJob_deadline_time" size="10"><br />
+		<input type="date" name="viewJob_deadline_date" size="10">
+		</article>
+		
+		<article class="right">
+		<h4>Days</h4>
+		<input type="checkbox" name="viewJob_days" value="Everyday"><label for="everyday">Everyday</label><br /><br />
+		<input type="checkbox" name="viewJob_days" value="M"><label for="monday">Monday</label><br /><br />
+		<input type="checkbox" name="viewJob_days" value="T" checked><label for="tuesday">Tuesday</label><br /><br />
+		<input type="checkbox" name="viewJob_days" value="W"><label for="wednesay">Wednesday</label><br /><br />
+		<input type="checkbox" name="viewJob_days" value="Th" checked><label for="thursday">Thursday</label><br /><br />
+		<input type="checkbox" name="viewJob_days" value="F"><label for="friday">Friday</label><br /><br />
+		<input type="checkbox" name="viewJob_days" value="Sat"><label for="saturday">Saturday</label><br /><br />
+		<input type="checkbox" name="viewJob_days" value="Sun"><label for="sunday">Sunday</label>
+		</article>
+		
+		<a href="liz/notifications/practiceViola.html"><input type="submit" name="save_frequency" class="save" value="Save Frequency"></a>
+	</div>

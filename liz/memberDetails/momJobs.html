@@ -1,13 +1,15 @@
-	<nav id = "navBar" class="center">
-		<a href="family.html" class="slideInLeft" id="left"><img src="images/back.png"></a>
-		<h2>My Job Chart</h2>
-		<a href="settingsMenu.html" class="slideInTop" id="right"><img src="images/settings.png"></a>
-	</nav>
-	<nav id = "toggleBar">
-		<a id="left" href="today.html">Today</a><a id="middle" class="selected" href="week.html">Week</a><a id="right" href="month.html">Month</a>
-	</nav>
 	
-	<div class="sortable" id="week">
+	<nav id = "navBar" class="center">
+		<a href="liz/family.html" class="slideInLeft" id="left"><img src="images/back.png"></a>
+		<h2>Mom's Jobs</h2>
+		<a href="liz/settingsMenu.html" class="slideInTop" id="right"><img src="images/settings.png"></a>
+	</nav>
+	<div id="memberJobs">
+		<div class="center">
+		<nav id = "toggleBarEmpty">
+		</nav>
+		</div>
+	<div id="week">
 		<div class="third">
 			<img class="jobIcon" src="images/jobIcon_feedDog.png">
 			<div class="blueOverlay7">
@@ -86,10 +88,9 @@
 		</div>
 		<div class="clear"></div>
 	</div>
+	</div>
 	<nav id = "tabBar">
-		<a href="addMenu.html" class="slideInBottom"><img src="images/add.png"></a>
-		<a href="family.html"><img src="images/jobsBlue.png"></a>
+		<a href="liz/addMenuMember.html" class="slideInBottom"><img src="images/add.png"></a>
+		<a href="liz/week.html"><img src="images/jobs.png"></a>
 		<a href="sortBenefit/rewardsSort.html"><img src="images/rewards.png"></a>
 	</nav>
-	
-<script>$('.sortable').sortable();</script>

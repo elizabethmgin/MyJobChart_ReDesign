@@ -29,13 +29,10 @@ body {
     width: 320px;
     height: 568px;
     font-size: 1em;
-    position: absolute;
-    top: 20px;
 }
 
 /* Headers
 -------------------------------------------------------------- */
-
 h1, h2, h3, h4, h5, h6, h7 {
     margin: 0;
 }
@@ -142,6 +139,10 @@ nav#tabBar {
 nav#tabBar img {
     width: 37px;
     padding: 3px 32px 0px 32px;
+}
+
+nav#toggleBarEmpty {
+    display: inline-block;
 }
 
 nav#toggleBar a {
@@ -788,7 +789,7 @@ div#selectJobs td, div#selectValue td, div#memberSettings td, div#selectEvent td
     vertical-align: middle;
 }
 
-div#selectJobs th, div#selectValue th, div#selectEvent th {
+div#selectJobs th, div#selectValue th, div#selectEvent th, div#memberSettings th {
     color: rgb(88,89,91);
     padding: 10px 0px 10px 12px;
     font-weight: 300;
@@ -1174,7 +1175,7 @@ a {
 /* Divs
 -------------------------------------------------------------- */
 
-div#memberSettings .icon, div#assignJobComplete .icon, div#assignJob .icon, div#newJob .icon, div#newJobComplete .icon, div#assignJobAlmost .icon, div#viewJob .icon, div#addJob .icon {
+div#memberSettings .icon, div#memberSettings .iconLiz, div#assignJobComplete .icon, div#assignJob .icon, div#newJob .icon, div#newJobComplete .icon, div#assignJobAlmost .icon, div#viewJob .icon, div#addJob .icon {
     border: 2px dashed rgb(128,130,133);
     width: 80px;
     height: 60px;
@@ -1187,6 +1188,10 @@ div#memberSettings .icon, div#assignJobComplete .icon, div#assignJob .icon, div#
 	
 div#memberSettings .icon {
 	background: no-repeat center url('../images/profileMom.png');
+}
+
+div#memberSettings .iconLiz {
+	background: no-repeat center url('../images/profileLiz.png');
 }
 
 div#assignJobComplete .icon {

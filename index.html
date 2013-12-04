@@ -5,7 +5,7 @@
 	<meta charset="utf-8" />
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name = "viewport" content = "width = device-width, user-scalable = no">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<title>My Job Chart</title>
 	 
 	<link rel="stylesheet" href="css/reset.css" type="text/css" />
@@ -13,15 +13,10 @@
 	<link rel="apple-touch-icon" href="images/myjobchart_icon.png">
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> <!-- added for draggable -->
+ 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
 	<script src="js/script.js"></script>
 	
-	<script>
-	  $(function() {
-	    $(".draggable").draggable();
-		$(".sortable").sortable();
-	  });
-	  </script>
 	 
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -57,12 +52,6 @@
 				</li>
 				<li>
 					<a href="signUp.html">sign up<img src="images/addWhite.png"></a>
-				</li>
-				<li>
-					<a href="notifications.html">notifications<img src="images/addWhite.png"></a>
-				</li>
-				<li>
-					<a href="reminder.html">reminders<img src="images/addWhite.png"></a>
 				</li>
 			</ul>
 		</aside>

@@ -6,7 +6,7 @@
 	<nav id = "toggleBar">
 		<a id="left" href="sortBenefit/rewardsSort.html">Sort</a><a id="middle" class="selected" href="sortBenefit/rewardsSpend.html">Spend</a><a id="right" href="sortBenefit/rewardsSettings.html">Settings</a>
 	</nav>
-		<div class="draggable" id="amount">$10</div>
+		<div class="draggable" id="amount"><span id="moneyToSpend">$10</span></div>
 		<p class="info">drag onto wishlist item</p>
 		
 		<h4>Wishlist</h4>
@@ -17,9 +17,9 @@
 		<p>Camping chair</p>
 		</div>
 		
-		<div class="wishlist">
+		<div class="wishlist" id="standingDesk">
 		<div class="wishlistBag">
-			$89
+			<span id="costOfItem">$89</span>
 		</div>
 		<p>Standing desk</p>
 		</div>
@@ -43,3 +43,11 @@
 		<a href="sortBenefit/rewardsSpend.html"><button type="button">Clear</button></a>
 		<a href="sortBenefit/rewardsSpendEmpty.html"><input type="submit" name="save_spending" value="Save Spending"></a>
 </div>
+
+<script>$('.draggable').draggable({revert:true,snap: "#standingDesk", snapMode: "inner", stop:function(){
+		$("span#moneyToSpend").text('$0');
+		$("span#costOfItem").text('$79');
+		$("p.info").text('add a job!');
+		alert('done');
+	}
+});</script>
