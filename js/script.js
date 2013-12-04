@@ -59,4 +59,12 @@ $(document).ready(function() {
 		});
 		return false;
 	});
+	
+
+	//$('.makeAvailable').on('click', function(event) {
+	//    $('.unavailableOptions').animate({ opacity: 1.0}, function() {
+	//        //$row.find('.hidden').fadeIn();
+	//    });
+	//});
+
 });

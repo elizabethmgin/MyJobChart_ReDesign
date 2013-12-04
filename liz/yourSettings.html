@@ -58,15 +58,18 @@
 					</tr>
 					<tr class="odd">
 						<td>Summary</td>
-						<td><input type="checkbox" name="summary" value="email"></td>
-						<td><input type="checkbox" name="summary" value="sms"></td>
+						<td><input type="checkbox" name="summary" value="email" class="makeAvailable"></td>
+						<td><input type="checkbox" name="summary" value="sms" class="makeAvailable"></td>
 					</tr>
 				</table>
 			</li>
-			<li>Summaries
-				<div class="right">
-				<input type="radio" name="summaries" value="daily"><label for="daily">Daily</label><input type="radio" name="summaries" value="weekly"><label for="weekly">Weekly</label><br />
-				<input type="time" name="summary_time" placeholder="Summary Time">
+			<li>
+				<div class="unavailableOptions">
+					Summaries
+					<div class="right">
+						<input type="radio" name="summaries" value="daily"><label for="daily">Daily</label><input type="radio" name="summaries" value="weekly"><label for="weekly">Weekly</label><br />
+						<input type="time" name="summary_time" placeholder="Summary Time">
+					</div>
 				</div>
 				<div class="clear"></div>
 			</li>
@@ -94,3 +97,11 @@
 		</ul>
 <a href="liz/week.html"><input type="submit" name="save_settings" class="save" value="Save Settings"></a>
 </div>
+
+<script>
+$(function() {
+    $( ".makeAvailable" ).click(function() {
+      $( ".unavailableOptions" ).toggleClass( "availableOptions", 200 );
+    });
+  });
+</script>

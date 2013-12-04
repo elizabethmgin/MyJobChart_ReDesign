@@ -9,17 +9,27 @@
 			<li>Type <span class="blue">*</span>
 				<div class="right">
 					<input type="radio" name="newBenefit_type" value="event" checked><label for="benefit_type">Event</label>
-					<input type="radio" name="newBenefit_type" value="item"><label for="benefit_type">Item</label>
+					<input type="radio" name="newBenefit_type" value="item" class="makeAvailable"><label for="benefit_type">Item</label>
 				</div>
 				<div class="clear"></div>
 				</li>
-			<li>Retail 
-				<div class="right">
-					<input type="text" name="newBenefit_cost" placeholder="benefit cost"><br />
-					<input type="text" name="newBenefit_link" placeholder="http://">
+			<li>
+				<div class="unavailableOptions">
+					Retail 
+					<div class="right">
+						<input type="text" name="newBenefit_cost" placeholder="benefit cost"><br />
+						<input type="text" name="newBenefit_link" placeholder="http://">
+					</div>
 				</div>
 				<div class="clear"></div>
 			</li>
 		</ul>
 		<a href="newBenefit/newBenefitComplete.html"><input type="submit" name="create_benefit" class="save" value="Create Benefit"></a>
 	</div>
+<script>
+$(function() {
+    $( ".makeAvailable" ).click(function() {
+      $( ".unavailableOptions" ).toggleClass( "availableOptions", 200 );
+    });
+  });
+</script>

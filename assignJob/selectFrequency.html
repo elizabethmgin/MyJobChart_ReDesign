@@ -6,45 +6,43 @@
 	<div class="clear"></div>
 	<div id="selectFrequency">
 		<article class="left">
-		<h4>Occurrence</h4>
-		<input type="radio" name="assignJob_occurence" value="weekly" checked><label for="weekly">Weekly</label><br /><br />
-		<input type="radio" name="assignJob_occurence" value="biweekly"><label for="biweekly">Biweekly</label><br /><br />
-		<input type="checkbox" name="assignJob_recurring" value="recurring" class="makeAvailable"><label for="recurring">Recurring</label>
-		
-		<div class="unavailableOptions">
-		<h4>Start date</h4>
-		<input type="date" name="assignJob_start_date" size="10">
-		
-		<h4>End date</h4>
-		<input type="date" name="assignJob_end_date" size="10">
-		
-		<h4>Deadline</h4>
-		<input type="time" name="assignJob_deadline_time" size="10"><br />
-		<input type="date" name="assignJob_deadline_date" size="10">
+			<h4>Occurrence</h4>
+			<input type="radio" name="assignJob_occurence" id="weekly" value="weekly" checked><label for="weekly">Weekly</label><br /><br />
+			<input type="radio" name="assignJob_occurence" id="biweekly" value="biweekly"><label for="biweekly">Biweekly</label><br /><br />
+			<input type="checkbox" name="assignJob_recurring" id="recurring" value="recurring" class="makeAvailable"><label for="recurring">Recurring</label>
+			
+			<div class="unavailableOptions">
+				<h4>Start date</h4>
+				<input type="date" name="assignJob_start_date" size="10">
+				
+				<h4>End date</h4>
+				<input type="date" name="assignJob_end_date" size="10">
+			</div>
+			
+			<h4>Deadline</h4>
+			<input type="time" name="assignJob_deadline_time" size="10"><br />
+			<input type="date" name="assignJob_deadline_date" size="10">
 		</article>
-		</div>
+		
 		
 		<article class="right">
-		<h4>Days</h4>
-		<input type="checkbox" name="assignJob_days" value="Everyday"><label for="everyday">Everyday</label><br /><br />
-		<input type="checkbox" name="assignJob_days" value="M"><label for="monday">Monday</label><br /><br />
-		<input type="checkbox" name="assignJob_days" value="T" checked><label for="tuesday">Tuesday</label><br /><br />
-		<input type="checkbox" name="assignJob_days" value="W"><label for="wednesay">Wednesday</label><br /><br />
-		<input type="checkbox" name="assignJob_days" value="Th" checked><label for="thursday">Thursday</label><br /><br />
-		<input type="checkbox" name="assignJob_days" value="F"><label for="friday">Friday</label><br /><br />
-		<input type="checkbox" name="assignJob_days" value="Sat"><label for="saturday">Saturday</label><br /><br />
-		<input type="checkbox" name="assignJob_days" value="Sun"><label for="sunday">Sunday</label>
+			<h4>Days</h4>
+			<input type="checkbox" name="assignJob_days" id="everyday" value="Everyday"><label for="everyday">Everyday</label><br /><br />
+			<input type="checkbox" name="assignJob_days" id="monday" value="M"><label for="monday">Monday</label><br /><br />
+			<input type="checkbox" name="assignJob_days" id="tuesday" value="T" checked><label for="tuesday">Tuesday</label><br /><br />
+			<input type="checkbox" name="assignJob_days" id="wednesday" value="W"><label for="wednesday">Wednesday</label><br /><br />
+			<input type="checkbox" name="assignJob_days" id="thursday" value="Th" checked><label for="thursday">Thursday</label><br /><br />
+			<input type="checkbox" name="assignJob_days" id="friday" value="F"><label for="friday">Friday</label><br /><br />
+			<input type="checkbox" name="assignJob_days" id="saturday" value="Sat"><label for="saturday">Saturday</label><br /><br />
+			<input type="checkbox" name="assignJob_days" id="sunday" value="Sun"><label for="sunday">Sunday</label>
 		</article>
 		
 		<a href="assignJob/assignJobComplete.html"><input type="submit" name="save_frequency" class="save" value="Save Frequency"></a>
 	</div>
-
-<script>	
-	$(document).ready(function() {
-	    $('.makeAvailable').on('click', function(event) {
-	        $('.unavailableOptions').animate({ opacity: 0.5}, function() {
-	            //$row.find('.hidden').fadeIn();
-	        });
-	    });
-	});
+<script>
+$(function() {
+    $( ".makeAvailable" ).click(function() {
+      $( ".unavailableOptions" ).toggleClass( "availableOptions", 200 );
+    });
+  });
 </script>

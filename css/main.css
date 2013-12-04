@@ -881,7 +881,7 @@ div#verification span.task, div#verification span.done, div#reminder span.task, 
 /* Select Frequency, Group Benefit Choices, Group Sorting Choices
 -------------------------------------------------------------- */
 
-div#selectFrequency input[type="date"], div#selectFrequency input[type="time"], div#groupBenefitChoices article input, div#selectEvent input[type="text"], div#newMember input[type="text"], div#newSortCategory input[type="text"], div#newGroup input[type="text"], div#newJob input[type="text"], div#memberSettings input[type="text"] {
+div#selectFrequency input[type="date"], div#selectFrequency input[type="time"], div#selectEvent input[type="text"], div#newMember input[type="text"], div#newSortCategory input[type="text"], div#newGroup input[type="text"], div#newJob input[type="text"], div#memberSettings input[type="text"] {
     margin-left: 12px;
     margin-bottom: 15px;
 }
@@ -1063,7 +1063,7 @@ input[type="checkbox"], input[type="radio"]{
     margin-left: 12px;
 }
 
-div#selectFrequency input[type="radio"], div#selectFrequency input[type="checkbox"] {
+div#selectFrequency input[type="radio"], div#selectFrequency input[type="checkbox"], div#groupBenefitChoices article input {
     margin-left: 12px;
 }
 
@@ -1232,3 +1232,10 @@ p.info, .privilege, .mini {
     padding-top: 10px;
 }
 
+.unavailableOptions {
+    opacity: 0.2;
+}
+
+.availableOptions {
+    opacity: 1.0;
+}
