@@ -29,6 +29,8 @@ body {
     width: 320px;
     height: 568px;
     font-size: 1em;
+    position: absolute;
+    top: 20px;
 }
 
 /* Headers
