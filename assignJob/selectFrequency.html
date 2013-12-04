@@ -9,8 +9,9 @@
 		<h4>Occurrence</h4>
 		<input type="radio" name="assignJob_occurence" value="weekly" checked><label for="weekly">Weekly</label><br /><br />
 		<input type="radio" name="assignJob_occurence" value="biweekly"><label for="biweekly">Biweekly</label><br /><br />
-		<input type="checkbox" name="assignJob_recurring" value="recurring" checked><label for="recurring">Recurring</label>
+		<input type="checkbox" name="assignJob_recurring" value="recurring" class="makeAvailable"><label for="recurring">Recurring</label>
 		
+		<div class="unavailableOptions">
 		<h4>Start date</h4>
 		<input type="date" name="assignJob_start_date" size="10">
 		
@@ -21,6 +22,7 @@
 		<input type="time" name="assignJob_deadline_time" size="10"><br />
 		<input type="date" name="assignJob_deadline_date" size="10">
 		</article>
+		</div>
 		
 		<article class="right">
 		<h4>Days</h4>
@@ -36,3 +38,13 @@
 		
 		<a href="assignJob/assignJobComplete.html"><input type="submit" name="save_frequency" class="save" value="Save Frequency"></a>
 	</div>
+
+<script>	
+	$(document).ready(function() {
+	    $('.makeAvailable').on('click', function(event) {
+	        $('.unavailableOptions').animate({ opacity: 0.5}, function() {
+	            //$row.find('.hidden').fadeIn();
+	        });
+	    });
+	});
+</script>
