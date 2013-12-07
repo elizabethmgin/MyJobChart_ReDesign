@@ -46,9 +46,17 @@ $(document).ready(function() {
             	        $('#transitionContainerTop').attr('id','container');
             	        $('#container').attr('class','settingsSlide');
             	    });
-            	}else if (clicked_link.hasClass('minimize')){
-                    $('#container').remove();
-                    $('#background').attr('id','container');
+            	}else if (clicked_link.hasClass('slideInRightOverlay')){
+            	    var position = clicked_link.position();
+                    $('#container').after('<section id="transitionContainerRightOverlay" style="position:fixed; width: 320px; height: 568px; left: 320px; top: ' + position.top + 'px;"></section>');
+    			    $('#transitionContainerRightOverlay').html(data);
+    			    $('#container').attr('id','background');
+        		    $( "#background" ).animate({opacity: 0.25}, 200, function() {
+                        // Animation complete.
+                      });
+    			    $('#transitionContainerRightOverlay').animate({left:0}, 500, function() {
+    			        $('#transitionContainerRightOverlay').attr('id','container');
+    			    });
                 }else {
         		    $('#background').remove();
 			        $('#container').html(data);
