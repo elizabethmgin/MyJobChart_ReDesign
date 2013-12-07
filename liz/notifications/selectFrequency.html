@@ -11,7 +11,7 @@
 			<input type="radio" name="viewJob_occurence" id="biweekly" value="biweekly"><label for="biweekly">Biweekly</label><br /><br />
 			<input type="checkbox" name="viewJob_recurring" id="recurring" alue="recurring" class="makeAvailable" checked><label for="recurring">Recurring</label>
 			
-			<div class="unavailableOptions">
+			<div class="availableOptions">
 				<h4>Start date</h4>
 				<input type="date" name="viewJob_start_date" size="10">
 				
@@ -41,7 +41,7 @@
 <script>
 $(function() {
     $( ".makeAvailable" ).click(function() {
-      $( ".unavailableOptions" ).toggleClass( "availableOptions", 200 );
+      $( ".availableOptions" ).toggleClass( "unavailableOptions", 200 );
     });
   });
 </script>

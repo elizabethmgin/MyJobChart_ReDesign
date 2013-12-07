@@ -922,21 +922,32 @@ div#selectFrequency h4, div#selectValue h4, div#selectEvent h4 {
 
 div#selectMembers .addMember {
     border: 1px solid rgb(147,149,152);
-    width: 94px;
-    height: 94px;
+    width: 93px;
+    height: 93px;
 }
 
-div#selectMembers .memberImg {
+div#selectMembers img.member1, div#selectMembers img.member2, div#selectMembers img.member3, div#selectMembers img.member4, div#selectMembers img.member5 {
     width: 94px;
+    z-index: 1;
 }
 
-div#selectMembers > div {
-    margin: 25px 0px 40px 10px;
+div#selectMembers div.memberImage {
+    margin: 0px 2px 0px 2px;
     float: left;
 }
 
-div#selectMembers > div div, div#photoDefault ul li div div {
-    margin: 0px 2px 10px 2px;
+div#selectMembers > div.firstRow {
+    margin: 25px 0px 0px 10px;
+    float: left;
+}
+
+div#selectMembers > div.secondRow {
+    margin: 10px 0px 40px 10px;
+    float: left;
+}
+
+div#photoDefault ul li div div {
+    margin: 0px 2px 0px 2px;
     float: left;
 }
 
@@ -946,11 +957,11 @@ div#photoDefault ul li div div img {
 
 .selectedImage {
     border: 1px solid rgb(0,169,163);
-    z-index: 1;
     width: 94px;
+    z-index: 1;
 }
 
-div#selectMembers > div div img.selectedMember, div#photoDefault img.selectedImage {
+div#selectMembers img.selectedMember1, div#selectMembers img.selectedMember2, div#selectMembers img.selectedMember3, div#selectMembers img.selectedMember4, div#selectMembers img.selectedMember5, div#photoDefault img.selectedImage {
     position: relative;
     margin-left: -35px;
     z-index: 10;
@@ -961,7 +972,7 @@ div#photosDefault ul li div {
 }
 
 div#selectMembers p {
-    margin-bottom: 10px;
+    margin: 25px 0px 10px 0px;
     text-align: center;
 }
 
@@ -1170,6 +1181,9 @@ a {
     color: rgb(128,130,133);
 }
 
+.hidden {
+    visibility: hidden;
+}
 
 
 /* Divs

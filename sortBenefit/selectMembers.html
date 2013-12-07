@@ -5,14 +5,38 @@
 	</nav>
 	<div class="clear"></div>
 	<div id="selectMembers">
-		
-		<div>
-			<p>Share $2 with whom?</p>
-			<a href="sortBenefit/selectedMembers.html"><div><img class="memberImg" src="images/mom.png"></div></a>
-			<a href="sortBenefit/selectedMembers.html"><div><img class="memberImg" src="images/dad.png"></div></a>
-			<a href="sortBenefit/selectedMembers.html"><div><img class="memberImg" src="images/derek.png"></div></a>
-			<a href="sortBenefit/selectedMembers.html"><div><img class="memberImg" src="images/sister.png"></div></a>
-			<a href="sortBenefit/selectedMembers.html"><div><img class="memberImg" src="images/eric.png"></div></a>
+		<p>Share $2 with whom?</p>
+		<div class="firstRow">
+			<div class="memberImage"><img class="member1" src="images/mom.png"><img class="selectedMember1 hidden" src="images/selectBlue.png" ></div>
+			<div class="memberImage"><img class="member2" src="images/dad.png"><img class="selectedMember2 hidden" src="images/selectBlue.png" ></div>
+			<div class="memberImage"><img class="member3" src="images/derek.png"><img class="selectedMember3 hidden" src="images/selectBlue.png" ></div>
+		</div>
+		<div class="secondRow">
+			<div class="memberImage"><img class="member4" src="images/sister.png"><img class="selectedMember4 hidden" src="images/selectBlue.png" ></div>
+			<div class="memberImage"><img class="member5" src="images/eric.png"><img class="selectedMember5 hidden" src="images/selectBlue.png" ></div>
 		</div>
 		<a href="sortBenefit/rewardsSpend.html"><input type="submit" name="benefit_share" class="save" value="Share"></a>
 	</div>
+
+<script>
+$( 'img.member1' ).click(function() {
+  	$( this ).toggleClass( 'selectedImage' );
+	$( 'img.selectedMember1' ).toggleClass( 'hidden' );
+});
+$( 'img.member2' ).click(function() {
+  	$( this ).toggleClass( 'selectedImage' );
+	$( 'img.selectedMember2' ).toggleClass( 'hidden' );
+});
+$( 'img.member3' ).click(function() {
+  	$( this ).toggleClass( 'selectedImage' );
+	$( 'img.selectedMember3' ).toggleClass( 'hidden' );
+});
+$( 'img.member4' ).click(function() {
+  	$( this ).toggleClass( 'selectedImage' );
+	$( 'img.selectedMember4' ).toggleClass( 'hidden' );
+});
+$( 'img.member5' ).click(function() {
+  	$( this ).toggleClass( 'selectedImage' );
+	$( 'img.selectedMember5' ).toggleClass( 'hidden' );
+});
+</script>
