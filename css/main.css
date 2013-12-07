@@ -276,6 +276,21 @@ div#week .quarter, div#week .third, div#week .threeQuarter {
     margin: 4px 4px 0px 0px;
 }
 
+div#week #jobTrash {
+    background-color: rgb(147,149,152);
+    margin: 4px 4px 0px 0px;
+    width: 49%;
+    height: 80px;
+    position: relative;
+    float: right;
+    text-align: center;
+    z-index: 1;
+}
+
+div#week #jobTrash > img {
+    margin-top: 15px;
+}
+
 div#week .quarter {
     width: 24%;
     height: 80px;

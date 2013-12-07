@@ -46,10 +46,12 @@
 		<a href="sortBenefit/rewardsSpendEmpty.html"><input type="submit" name="save_spending" value="Save Spending"></a>
 </div>
 
-<script>$('.draggable').draggable({revert:true,snap: "#standingDesk", snapMode: "inner", stop:function(){
+<script>
+$('.draggable').draggable({revert:true,snap: "#standingDesk", snapMode: "inner", stop:function(){
 		$("span#moneyToSpend").text('$0');
 		$("span#costOfItem").text('$79');
 		$("p.info").text('add a job!');
 		//alert('done');
 	}
-});</script>
+});
+</script>
