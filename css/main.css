@@ -1024,8 +1024,9 @@ div#selectMembers p {
 
 div#login {
     background-color: rgb(0,169,163);
-    padding: 12px;
+    padding: 20px;
     height: 568px;
+    text-align: center;
 }
 
 div#login li {
@@ -1044,6 +1045,7 @@ div#login aside {
     padding: 12px;
     float: right;
     margin-top: 50px;
+    text-align: right;
 }
 
 div#login ul {
@@ -1063,7 +1065,7 @@ div#login aside a {
 
 div#login input.login {
     margin: 0;
-    width: 81%;
+    width: 95%;
     cursor: pointer;
 }
 
@@ -1072,6 +1074,7 @@ div#login p#message {
     font-weight: 300;
     font-size: 1.1em;
     margin-bottom: 20px;
+    text-align: left;
 }
 
 
@@ -1100,7 +1103,8 @@ input[type="email"], input[type="password"] {
     font-weight: 300;
     color: rgb(128,130,133);
     background-color: rgba(255,255,255,.8);
-    width: 75%;
+    width: 95%;
+    float: left;
 }
 
 input:focus, textarea:focus {

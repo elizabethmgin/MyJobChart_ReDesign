@@ -8,7 +8,7 @@
 	</nav>
 	
 	<div class="sortable" id="week">
-		<div class="third">
+		<div class="third" id="feedDog">
 			<img class="jobIcon" src="images/jobIcon_feedDog.png">
 			<div class="blueOverlay7">
 				<img class="dayNight" src="images/sun.png">
@@ -92,4 +92,16 @@
 		<a href="sortBenefit/rewardsSort.html"><img src="images/rewards.png"></a>
 	</nav>
 	
-<script>$('.sortable').sortable();</script>
+<script>
+	$('.sortable').sortable();
+	$(function(){
+	  $( "#feedDog" ).bind( "taphold", tapholdHandler );
+
+	  function tapholdHandler( event ){
+	    $("#feedDog").html("<div class='jobModify'><p>Modify</p></div><div class='jobDone'><p>Done</p></div>");
+		$( "div.jobDone" ).click(function() {
+		  $( this ).parent().remove();
+		});
+	  }
+	});
+</script>
