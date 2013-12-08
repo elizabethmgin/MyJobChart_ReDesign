@@ -8,7 +8,7 @@
 	</nav>
 	
 	<div class="sortable" id="week">
-		<div class="third draggable" style="z-index:100;">
+		<div class="third" id="setTable">
 			<img class="jobIcon" src="images/jobIcon_setTable.png">
 			<div class="blueOverlay7">
 				<img class="dayNight" src="images/moon.png">
@@ -71,7 +71,12 @@
 				<h5 class="white">Clean Bathroom</h5>
 			</div>
 		</div>
-		<div class="third">
+		<div class="third" id="vacuum">
+			<div class="hidden">
+				<div class="jobDone">
+					<p>Done</p>
+				</div>
+			</div>
 			<img class="jobIcon" src="images/jobIcon_vacuumHouse.png">
 			<div class="blueOverlay2">
 				<img class="dayNight" src="images/sun.png">
@@ -100,5 +105,25 @@
 			$('#jobTrash').toggleClass('hidden');
 			//alert('done');
 		}
+	});
+	$(function(){
+	  $( "#vacuum" ).bind( "taphold", tapholdHandler );
+
+	  function tapholdHandler( event ){
+	    $("#vacuum").html("<div class='jobModify'><p>Modify</p></div><div class='jobDone'><p>Done</p></div>");
+		$( "div.jobDone" ).click(function() {
+		  $( this ).parent().remove();
+		});
+	  }
+	});
+	$(function(){
+	  $( "#setTable" ).bind( "taphold", tapholdHandler );
+
+	  function tapholdHandler( event ){
+	    $("#setTable").html("<a href='liz/setTable.html'><div class='jobModify'><p>Modify</p></div></a><div class='jobDone'><p>Done</p></div>");
+		$( "div.jobDone" ).click(function() {
+		  $( this ).parent().remove();
+		});
+	  }
 	});
 </script>
